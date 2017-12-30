@@ -11,9 +11,18 @@ public class TextController : MonoBehaviour {
 							corridor_0, stairs_0, showers_0, bobby_pins, corridor_return, corridor_1, stairs_1, storage_0, lock_2, 
 							storage_1, lock_3, selection_0, item_1, item_2, item_3, item_4, 
 							selection_1_item_1, selection_1_item_2, selection_1_item_3, selection_1_item_4, 
+							corridor_2_item_1, corridor_2_item_2, corridor_2_item_3, corridor_2_item_4, 
 							selection_2_item_1, selection_2_item_2, selection_2_item_3, selection_2_item_4, 
-							selection_3_item_1, selection_3_item_2, selection_3_item_3, selection_3_item_4,
-							corridor_2, showers_1, corridor_3, stairs_2, use_item_1, use_item_2, stairs_3,
+							corridor_3_item_1_2, corridor_3_item_1_3, corridor_3_item_1_4, 
+							corridor_3_item_2_1, corridor_3_item_2_3, corridor_3_item_2_4, 
+							corridor_3_item_3_1, corridor_3_item_3_2, corridor_3_item_3_4, 
+							corridor_3_item_4_1, corridor_3_item_4_2, corridor_3_item_4_3, 
+							selection_3_item_1, selection_3_item_2, selection_3_item_3, selection_3_item_4, 
+							corridor_4_item_1_2_3, corridor_4_item_1_3_2, corridor_4_item_1_2_4, corridor_4_item_1_4_2, corridor_4_item_1_3_4, corridor_4_item_1_4_3,  
+							corridor_4_item_2_1_3, corridor_4_item_2_3_1, corridor_4_item_2_1_4, corridor_4_item_2_4_1, corridor_4_item_2_3_4, corridor_4_item_1_4_3, 
+							corridor_4_item_3_1_2, corridor_4_item_3_2_1, corridor_4_item_3_1_4, corridor_4_item_3_4_1, corridor_4_item_3_2_4, corridor_4_item_3_4_2, 
+							corridor_4_item_4_1_2, corridor_4_item_4_2_1, corridor_4_item_4_1_3, corridor_4_item_4_3_1, corridor_4_item_4_2_3, corridor_4_item_4_3_2, 
+							corridor_5, showers_1, stairs_2, use_item_1, use_item_2, stairs_3,
 							barracks_0, closet_0, lock_4, use_item_3, custodian_0, use_item_4, custodian_1, custodian_2,  
 							closet_1, lock_5, uniform_0, court_0, gate_0, gate_1, freedom};
 	private States myState;
@@ -68,6 +77,8 @@ public class TextController : MonoBehaviour {
 			state_stairs_1();
 		} else if (myState == States.lock_3) {
 			state_lock_3();
+		} else if (myState == States.selection_0) {
+			state_selection_0();
 		}
 	}
 		
@@ -82,7 +93,7 @@ public class TextController : MonoBehaviour {
 		void state_cell () {
 			text.text = "You are in danger of having a night with the Booty Warrior after a confrontation in the weight room. " +
 						"Nothing comes between the Booty Warrior and getting his booty. You can either do business " +
-						"with him the easy way or the hard way. You decided the easy way and picked tomorrow night. " +
+						"with his the easy way or the hard way. You decided the easy way and picked tomorrow night. " +
 						"Now you have to escape from your prison cell before it's too late! There are some dirty bed sheets, " +
 						"a mirror on the wall, and the door is locked from outside. \n\n" +
 						"Press S to View Sheets, Press M to view Mirrors and L to view Lock";
@@ -232,7 +243,7 @@ public class TextController : MonoBehaviour {
 		void state_showers_0 () {
 			text.text = "You sneak pass the door entering the showers. " +
 						"This is where the Booty Warrior and other inmates hunt for their next prey. " +
-						"You were at least lucky that they caught you with your clothes on. " +
+						"You were at least lucky that he caught you with your clothes on. " +
 						"You search for every corner of the shower for something useful. " +
 						"Less than a minute after your thorough search you found left over bobby pins on the floor. " +
 						"You figured they will come in handy for your escape so you decided to take them. \n\n" +
@@ -302,8 +313,43 @@ public class TextController : MonoBehaviour {
 						"discover that it's a perfect fit. You are then able to lock pick the door. \n\n" +
 						"Press P to return to pick the lock!";
 			if (Input.GetKeyDown(KeyCode.P)) {
-			myState = States.lock_3;
+			myState = States.selection_0;
 			}
+		}
+		
+		void state_selection_0 () {
+			text.text = "You successfully picked the lock. Clutch! " +
+						"Once you open the storage you were able to find 4 items. Inspections must have been " +
+						"slow this week. In front of you are a lighter, a flaslight, a screwdriver, and " +
+						"a pair of golden brass knuckles. You began strategically choosing each item. \n\n" +
+						"Press 1 to grab Lighter, Press 2 to grab Flaslight, Press 3 to grab Screwdriver, " +
+						"and Press 4 to grab Brass knuckles!";
+		if (Input.GetKeyDown(KeyCode.Alpha1)) {
+			myState = States.selection_1_item_1;
+		} else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+			myState = States.selection_1_item_2;
+		} else if (Input.GetKeyDown(KeyCode.Alpha3)) {
+			myState = States.selection_1_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.selection_1_item_4; 
+		}
+		}
+		
+		void state_selection_1_item_1 () {
+			text.text = "Choose to pick up the lighter, wise choice! " +
+						"The room is still quiet. You figured you can grab another item for insurance. " +
+						"You double check with your mirror to be safe. \n\n" +
+						"Press 2 to grab Flaslight, Press 3 to grab Screwdriver, Press 4 to grab Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha2)) {
+			myState = States.selection_2_item_1_2;
+		} else if (Input.GetKeyDown(KeyCode.Alpha3)) {
+			myState = States.selection_2_item_1_3;
+		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.selection_2_item_1_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1; 
+		}
 		}
 		
 }
