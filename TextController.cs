@@ -8,12 +8,14 @@ public class TextController : MonoBehaviour {
 	public Text text;
 
 	private enum States { title_screen, cell, cell_return, mirror, sheets_0, lock_0, cell_mirror, sheets_1, lock_1, 
-							corridor_0, stairs_0, showers_0, corridor_return, storage_0, lock_2, storage_1, lock_3, 
-							selection_0, item_1, item_2, item_3, item_4, 
+							corridor_0, stairs_0, showers_0, bobby_pins, corridor_return, corridor_1, storage_0, lock_2, 
+							storage_1, lock_3, selection_0, item_1, item_2, item_3, item_4, 
 							selection_1_item_1, selection_1_item_2, selection_1_item_3, selection_1_item_4, 
 							selection_2_item_1, selection_2_item_2, selection_2_item_3, selection_2_item_4, 
 							selection_3_item_1, selection_3_item_2, selection_3_item_3, selection_3_item_4,
-							corridor_1, showers_1, corridor_return, stairs_1, freedom};
+							corridor_2, showers_1, corridor_3, stairs_1, use_item_1, use_item_2, stairs_2,
+							barracks_0, closet_0, lock_4, use_item_3, custodian_0, use_item_4, custodian_1, custodian_2,  
+							closet_1, lock_5, uniform_0, court_0, gate_0, gate_1, freedom};
 	private States myState;
 
 	// Use this for initialization
@@ -42,9 +44,19 @@ public class TextController : MonoBehaviour {
 			state_sheets_1();
 		} else if (myState == States.lock_1) {
 			state_lock_1();
-		} //else if (myState == States.corridor_0) {
-			//state_corridor_0();
-		//}
+		} else if (myState == States.corridor_0) {
+			state_corridor_0();
+		} else if (myState == States.stairs_0) {
+			state_stairs_0();
+		} else if (myState == States.corridor_return) {
+			state_corridor_return();
+		} else if (myState == States.storage_0) {
+			state_storage_0();
+		} else if (myState == States.showers_0) {
+			state_showers_0();
+		} else if (myState == States.bobby_pins) {
+			state_bobby_pins();
+		}
 	}
 		
 		void state_title_screen () {
@@ -84,7 +96,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_sheets_0 () {
 			text.text = "You have been in prison for awhile haven't you? " +
-						"The security never cleans your sheets and you have all the time in the world to rub one off. " +
+						"The staff never cleans your sheets and you have all the time in the world to rub one off. " +
 						"It's not like you got anyhting else better to do, " +
 						"other than schedule unwanted play dates with fellow inmates. \n\n" +
 						"Press R to return to your cell!";
@@ -146,4 +158,86 @@ public class TextController : MonoBehaviour {
 		} 
 		}
 		
-} 
+		void state_corridor_0 () {
+			text.text = "You bust the lock open and quickly make your way to the corridor. " +
+						"You still have your mirror on hand to check for corners as you rush on your tip toes. " +
+						"You successfully made it to the corridor and find yourself in a division. You see stairs " +
+						"engulfed in darkness, an open door to the showers, and a door leading to the storage. \n\n" +
+						"Press D to view Stairs, Press S to go to Showers and C to view Storage";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_0;
+		} else if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.showers_0;
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.storage_0; 
+		}
+		}
+		
+		void state_stairs_0 () {
+			text.text = "You inspect the stairs, the overwhelmingly darkness makes you feel afraid to go any further. " +
+						"There is not enough natural light to reflect off the mirror to use downstairs. You decide " +
+						"to turn back to the corridor to see if you can find a weapon or source of light \n\n" +
+						"Press R to return to the corridor!";
+			if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_return;
+			}
+		}
+		
+		void state_corridor_return () {
+			text.text = "You return back to the corridor frantically thinking for a way out. " +
+						"You remain in the division you were leading to the stairs, showers, or storage. " +
+						"You have to act quickly before the guards find out left your cell. \n\n" +
+						"Press D to view Stairs, Press S to go to Showers and C to view Storage";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_0;
+		} else if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.showers_0;
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.storage_0; 
+		}
+		}
+		
+		void state_storage_0 () {
+			text.text = "You sneak pass the door leading to the storage. " +
+						"You recognize that this is the storage used for ceiling contraband. " +
+						"You find a lock attached to the storage. \n\n" +
+						"Press I to inspect to the lock!";
+			if (Input.GetKeyDown(KeyCode.I)) {
+			myState = States.lock_2;
+			}
+		}
+		
+		void state_lock_2 () {
+			text.text = "You inspect the lock and find their are no loose bolts. " +
+						"Shaking the handles won't do you any good. " +
+						"You decided to retreat back to the corridor to find anything useful. \n\n" +
+						"Press R to return to the corridor!";
+			if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_return;
+			}
+		}
+		
+		void state_showers_0 () {
+			text.text = "You sneak pass the door entering the showers. " +
+						"This is where the Booty Warrior and other inmates hunt for their next prey. " +
+						"You were at least lucky that they caught you with your clothes on. " +
+						"You search for every corner of the shower for something useful. " +
+						"Less than a minute after your thorough search you found left over bobby pins on the floor. " +
+						"You figured they will come in handy for your escape so you decided to take them. \n\n" +
+						"Press T to take to the bobby pins!";
+			if (Input.GetKeyDown(KeyCode.T)) {
+			myState = States.bobby_pins;
+			}
+		}
+		
+		void state_bobby_pins () {
+			text.text = "After collecting the bobby pins you decide to head back to the corridor before " +
+						"you become someone else's one-night stand. " +
+						"Without a moment's hesitation you maed it pass the door. \n\n" +
+						"Press R to return to the corridor!";
+			if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_1;
+			}
+		}
+		
+}
