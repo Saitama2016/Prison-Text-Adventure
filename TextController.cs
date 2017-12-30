@@ -22,9 +22,19 @@ public class TextController : MonoBehaviour {
 							corridor_4_item_2_1_3, corridor_4_item_2_3_1, corridor_4_item_2_1_4, corridor_4_item_2_4_1, corridor_4_item_2_3_4, corridor_4_item_1_4_3, 
 							corridor_4_item_3_1_2, corridor_4_item_3_2_1, corridor_4_item_3_1_4, corridor_4_item_3_4_1, corridor_4_item_3_2_4, corridor_4_item_3_4_2, 
 							corridor_4_item_4_1_2, corridor_4_item_4_2_1, corridor_4_item_4_1_3, corridor_4_item_4_3_1, corridor_4_item_4_2_3, corridor_4_item_4_3_2, 
-							corridor_5, showers_1, stairs_2, use_item_1, use_item_2, stairs_3,
-							barracks_0, closet_0, lock_4, use_item_3, custodian_0, use_item_4, custodian_1, custodian_2,  
-							closet_1, lock_5, uniform_0, court_0, gate_0, gate_1, freedom};
+							game_over_0, showers_1, 
+							stairs_2_item_1, stairs_2_item_2, stairs_2_item_3, stairs_2_item_4,
+							stairs_2_item_1_2, stairs_2_item_1_3, stairs_2_item_1_4, 
+							stairs_2_item_1_2, stairs_2_item_1_3, stairs_2_item_1_4, 
+							stairs_2_item_1_2, stairs_2_item_1_3, stairs_2_item_1_4, 
+							stairs_2_item_1_2, stairs_2_item_1_3, stairs_2_item_1_4,  
+							stairs_2_use_item_1, stairs_2_use_item_2, stairs_3,
+							barracks_0_item_1, barracks_0_item_2, barracks_0_item_3, barracks_0_item_4, 
+							barracks_0_item_1_2, barracks_0_item_1_3, barracks_0_item_1_4, 
+							barracks_0_item_2_1, barracks_0_item_2_3, barracks_0_item_2_4, 
+							barracks_0_item_3_1, barracks_0_item_3_2, barracks_0_item_3_4, 
+							closet_0, lock_4, use_item_3, custodian_0, use_item_4, custodian_1, custodian_2,  
+							closet_1, lock_5, uniform_0, court_0, gate_0, game_over_1, gate_1, freedom};
 	private States myState;
 
 	// Use this for initialization
