@@ -8,12 +8,12 @@ public class TextController : MonoBehaviour {
 	public Text text;
 
 	private enum States { title_screen, cell, cell_return, mirror, sheets_0, lock_0, cell_mirror, sheets_1, lock_1, 
-							corridor_0, stairs_0, showers_0, bobby_pins, corridor_return, corridor_1, storage_0, lock_2, 
+							corridor_0, stairs_0, showers_0, bobby_pins, corridor_return, corridor_1, stairs_1, storage_0, lock_2, 
 							storage_1, lock_3, selection_0, item_1, item_2, item_3, item_4, 
 							selection_1_item_1, selection_1_item_2, selection_1_item_3, selection_1_item_4, 
 							selection_2_item_1, selection_2_item_2, selection_2_item_3, selection_2_item_4, 
 							selection_3_item_1, selection_3_item_2, selection_3_item_3, selection_3_item_4,
-							corridor_2, showers_1, corridor_3, stairs_1, use_item_1, use_item_2, stairs_2,
+							corridor_2, showers_1, corridor_3, stairs_2, use_item_1, use_item_2, stairs_3,
 							barracks_0, closet_0, lock_4, use_item_3, custodian_0, use_item_4, custodian_1, custodian_2,  
 							closet_1, lock_5, uniform_0, court_0, gate_0, gate_1, freedom};
 	private States myState;
@@ -52,10 +52,22 @@ public class TextController : MonoBehaviour {
 			state_corridor_return();
 		} else if (myState == States.storage_0) {
 			state_storage_0();
+		} else if (myState == States.lock_2) {
+			state_lock_2();
 		} else if (myState == States.showers_0) {
 			state_showers_0();
 		} else if (myState == States.bobby_pins) {
 			state_bobby_pins();
+		} else if (myState == States.corridor_1) {
+			state_corridor_1();
+		} else if (myState == States.showers_1) {
+			state_showers_1();
+		} else if (myState == States.storage_1) {
+			state_storage_1();
+		} else if (myState == States.stairs_1) {
+			state_stairs_1();
+		} else if (myState == States.lock_3) {
+			state_lock_3();
 		}
 	}
 		
@@ -201,14 +213,14 @@ public class TextController : MonoBehaviour {
 			text.text = "You sneak pass the door leading to the storage. " +
 						"You recognize that this is the storage used for ceiling contraband. " +
 						"You find a lock attached to the storage. \n\n" +
-						"Press I to inspect to the lock!";
-			if (Input.GetKeyDown(KeyCode.I)) {
+						"Press L to inspect to the lock!";
+			if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_2;
 			}
 		}
 		
 		void state_lock_2 () {
-			text.text = "You inspect the lock and find their are no loose bolts. " +
+			text.text = "You inspect the lock and find there are no loose bolts. " +
 						"Shaking the handles won't do you any good. " +
 						"You decided to retreat back to the corridor to find anything useful. \n\n" +
 						"Press R to return to the corridor!";
@@ -233,10 +245,64 @@ public class TextController : MonoBehaviour {
 		void state_bobby_pins () {
 			text.text = "After collecting the bobby pins you decide to head back to the corridor before " +
 						"you become someone else's one-night stand. " +
-						"Without a moment's hesitation you maed it pass the door. \n\n" +
+						"Without a moment's hesitation you made it pass the door. \n\n" +
 						"Press R to return to the corridor!";
 			if (Input.GetKeyDown(KeyCode.R)) {
 			myState = States.corridor_1;
+			}
+		}
+		
+		void state_corridor_1 () {
+			text.text = "You return back to the corridor feeling confident you're thinking in the right direction. " +
+						"You are still figuring out the missing piece of the puzzle as you stare down each path. " +
+						"You cannot stall for any longer, you have to act quick! \n\n" +
+						"Press D to view Stairs, Press S to go to Showers and C to view Storage";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_1;
+		} else if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.showers_1;
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.storage_1; 
+		}
+		}
+		
+		void state_stairs_1 () {
+			text.text = "You inspect the stairs, the overwhelmingly darkness makes you feel afraid to go any further. " +
+						"There is not enough natural light to reflect off the mirror to use downstairs. You decide " +
+						"to turn back to the corridor to see if you can find a weapon or source of light \n\n" +
+						"Press R to return to the corridor!";
+			if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_1;
+			}
+		}
+		
+		void state_showers_1 () {
+			text.text = "What are you doing? Do you want to become someone's late night snack? " +
+						"Turn around now! " +
+						"Now is not the time to give up! \n\n" +
+						"Press R to return to the corridor!";
+			if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_1;
+			}
+		}
+		
+		void state_storage_1 () {
+			text.text = "You sneak pass the door leading to the storage. " +
+						"You recognize that this is the storage used for ceiling contraband. " +
+						"You find a lock attached to the storage. \n\n" +
+						"Press L to inspect to the lock!";
+			if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.lock_3;
+			}
+		}
+		
+		void state_lock_3 () {
+			text.text = "You inspect the lock and find there are no loose bolts, " +
+						"however, you insert one of the bobby pins you found in the shower and " +
+						"discover that it's a perfect fit. You are then able to lock pick the door. \n\n" +
+						"Press P to return to pick the lock!";
+			if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.lock_3;
 			}
 		}
 		
