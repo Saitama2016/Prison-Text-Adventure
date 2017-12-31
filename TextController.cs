@@ -159,6 +159,52 @@ public class TextController : MonoBehaviour {
 			state_selection_3_item_1_2_3();
 		} else if (myState == States.selection_3_item_1_2_4) {
 			state_selection_3_item_1_2_4();
+		} else if (myState == States.selection_3_item_1_3_2) {
+			state_selection_3_item_1_3_2();
+		} else if (myState == States.selection_3_item_1_3_4) {
+			state_selection_3_item_1_3_4();
+		} else if (myState == States.selection_3_item_1_4_2) {
+			state_selection_3_item_1_4_2();
+		} else if (myState == States.selection_3_item_1_4_3) {
+			state_selection_3_item_1_4_3();
+		} else if (myState == States.selection_3_item_2_1_3) {
+			state_selection_3_item_2_1_3();
+		} else if (myState == States.selection_3_item_2_1_4) {
+			state_selection_3_item_2_1_4();
+		} else if (myState == States.selection_3_item_2_3_1) {
+			state_selection_3_item_2_3_1();
+		} else if (myState == States.selection_3_item_2_3_4) {
+			state_selection_3_item_2_3_4();
+		} else if (myState == States.selection_3_item_2_4_1) {
+			state_selection_3_item_2_4_1();
+		} else if (myState == States.selection_3_item_2_4_3) {
+			state_selection_3_item_2_4_3();
+		} else if (myState == States.selection_3_item_3_1_2) {
+			state_selection_3_item_3_1_2();
+		} else if (myState == States.selection_3_item_3_1_4) {
+			state_selection_3_item_3_1_4();
+		} else if (myState == States.selection_3_item_3_2_1) {
+			state_selection_3_item_3_2_1();
+		} else if (myState == States.selection_3_item_3_2_4) {
+			state_selection_3_item_3_2_4();
+		} else if (myState == States.selection_3_item_3_4_1) {
+			state_selection_3_item_3_4_1();
+		} else if (myState == States.selection_3_item_3_4_2) {
+			state_selection_3_item_3_4_2();
+		} else if (myState == States.selection_3_item_4_1_2) {
+			state_selection_3_item_4_1_2();
+		} else if (myState == States.selection_3_item_4_1_3) {
+			state_selection_3_item_4_1_3();
+		} else if (myState == States.selection_3_item_4_2_1) {
+			state_selection_3_item_4_2_1();
+		} else if (myState == States.selection_3_item_4_2_3) {
+			state_selection_3_item_4_2_3();
+		} else if (myState == States.selection_3_item_4_3_1) {
+			state_selection_3_item_4_3_1();
+		} else if (myState == States.selection_3_item_4_3_2) {
+			state_selection_3_item_4_3_2();
+		} else if (myState == States.game_over_0) {
+			state_game_over_0();
 		}
 	}
 		
@@ -741,4 +787,247 @@ public class TextController : MonoBehaviour {
 		}
 		}
 		
+		void state_selection_3_item_2_1_3 () {
+			text.text = "You choose to pick up the Screwdriver, better to have it and not need it. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_1_3; 
+		}
+		}
+		
+		void state_selection_3_item_2_1_4 () {
+			text.text = "You choose to pick up the Brass knuckles, better to have it and not need it. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 3 to grab the Screwdriver, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha3)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_1_4; 
+		}
+		}
+		
+		void state_selection_3_item_2_3_1 () {
+			text.text = "You choose to pick up the Lighter, help lay low. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_3_1; 
+		}
+		}
+		
+		void state_selection_3_item_2_3_4 () {
+			text.text = "You choose to pick up the Brass knuckles, better to have it and not need it. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 1 to grab the Lighter, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha1)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_3_4; 
+		}
+		}
+		
+		void state_selection_3_item_2_4_1 () {
+			text.text = "You choose to pick up the Lighter, you are still able see from a small radius. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 3 to grab the Screwdriver, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha3)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_4_1; 
+		}
+		}
+		
+		void state_selection_3_item_2_4_3 () {
+			text.text = "You choose to pick up the Screwdriver, don't want to get your fist dirty. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 1 to grab the Lighter, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha1)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_4_3; 
+		}
+		}
+		
+		void state_selection_3_item_3_1_2 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_3_1_4 () {
+			text.text = "You choose to pick up the Brass knuckles, they won't see you coming. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 2 to grab the Flashlight, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha2)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_4; 
+		}
+		}
+		
+		void state_selection_3_item_3_2_1 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_3_2_4 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_3_4_1 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_3_4_2 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_4_1_2 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_4_1_3 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_4_2_1 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_4_2_3 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_4_3_1 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_selection_3_item_4_3_2 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press 4 to grab the Brass knuckles, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
+			myState = States.game_over_0;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_game_over_0 () {
+			text.text = "You choose to pick up the Flashlight, you can see from a longer range. " +
+						"You hear footsteps growing louder down the hall. Your adrenaline begins to pump. " +
+						"You are not sure if you can grab another item and escape. \n\n" +
+						"Press P to play again!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.cell;
+		} 
+		}
 }
