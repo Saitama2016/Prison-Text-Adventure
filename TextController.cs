@@ -1115,11 +1115,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were creeping around the halls. " +
 						"It's too dangerous to go back to the storage. What are you planning to do with a Lighter and no joint? " +
 						"Oh well, you have to move forward before the guards come back. \n\n" +
-						"Press S to go to the Showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_1; 
 		}
 		}
@@ -1128,11 +1125,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were creeping around the halls. " +
 						"It's too dangerous to go back. Are your sure a flashlight is enough? " +
 						"Oh well, you have to move forward before the guards come back. \n\n" +
-						"Press S to go to the Showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2; 
 		}
 		}
@@ -1141,11 +1135,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were creeping around the halls. " +
 						"It's too dangerous to go back. What are you going to do with a screwdriver and no light? " +
 						"Oh well, you have to move forward before the guards come back. \n\n" +
-						"Press S to go to the Showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3; 
 		}
 		}
@@ -1154,11 +1145,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were creeping around the halls. " +
 						"It's too dangerous to go back, those golden rings can only do so much. " +
 						"Oh well, you have to move forward before the guards come back. \n\n" +
-						"Press S to go to the showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4; 
 		}
 		}
@@ -1167,11 +1155,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were around the corner. " +
 						"It's too dangerous to go back, you couldn't grab a weapon? " +
 						"Oh well, you have to move forward before the guards come back. \n\n" +
-						"Press S to go to the Showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_1_2; 
 		}
 		}
@@ -1180,11 +1165,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were around the corner. " +
 						"You could have shanked a guard but you played it safe. " +
 						"Great job, now you have to move forward before the guards come back. \n\n" +
-						"Press S to go to the Showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_1_3; 
 		}
 		}
@@ -1193,11 +1175,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were around the corner. " +
 						"You could have knocked one of them out for the hell of it, but you played it cool. " +
 						"You have to move forward before the guards come back. \n\n" +
-						"Press S to go to the Showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_1_4; 
 		}
 		}
@@ -1206,427 +1185,328 @@ public class TextController : MonoBehaviour {
 			text.text = "You managed to escape the guards who were around the corner. " +
 						"You should have grabbed a weapon when you had the chance! " +
 						"Oh, well have to move forward before the guards come back. \n\n" +
-						"Press S to go to the Showers, " +
-						"or Press D to go to the Stairs!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_2; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_2; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_1_2_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_1_2_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_1_2_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_1_2_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_1_3_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_1_3_2; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_1_3_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_1_3_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_1_4_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_1_4_2; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_1_4_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_1_4_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_1_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_1_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_3_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_3_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_3_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_3_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_4_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_4_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_4_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_4_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_1_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_1_2; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_1_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_1_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_2_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_2_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_2_4 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_2_4; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_4_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_4_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_4_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_3_4_2; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_1_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_1_2; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_1_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_1_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_2_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_2_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_2_3 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_2_3; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_3_1 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_4_3_1; 
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
+			myState = States.stairs_2_item_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_3_2 () {
-			text.text = "You choose to pick up the Flashlight, you can try to avoid a fight. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
-						"Press 1 to grab the Lighter, " +
-						"or Press R to return to the corridor!";
-		if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.showers_1;
-		} else if (Input.GetKeyDown(KeyCode.D)) {
+			text.text = "You managed to escape the guards who were around the corner. " +
+						"You should have grabbed a weapon when you had the chance! " +
+						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Press D to go to the Stairs!";
+		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4_3_2; 
 		}
 		}
