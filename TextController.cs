@@ -38,7 +38,19 @@ public class TextController : MonoBehaviour {
 							stairs_2_item_2_1_3, stairs_2_item_2_3_1, stairs_2_item_2_1_4, stairs_2_item_2_4_1, stairs_2_item_2_3_4, stairs_2_item_2_4_3, 
 							stairs_2_item_3_1_2, stairs_2_item_3_2_1, stairs_2_item_3_2_4, stairs_2_item_3_4_2, stairs_2_item_3_1_4, stairs_2_item_3_4_1, 
 							stairs_2_item_4_1_2, stairs_2_item_4_2_1, stairs_2_item_4_1_3, stairs_2_item_4_3_1, stairs_2_item_4_2_3, stairs_2_item_4_3_2, 
-							stairs_2_use_item_1, stairs_2_use_item_2, stairs_3,
+							stairs_3_item_1, stairs_3_item_2, stairs_3_item_3, stairs_3_item_4, 
+							stairs_3_item_1_2a, stairs_3_item_1_2b, stairs_3_item_1_3, stairs_3_item_1_4,  
+							stairs_3_item_2_1a, stairs_3_item_2_1b, stairs_3_item_2_3, stairs_3_item_2_4, 
+							stairs_3_item_3_1, stairs_3_item_3_2, stairs_3_item_3_4, 
+							stairs_3_item_4_1, stairs_3_item_4_2, stairs_3_item_4_3, 
+							stairs_3_item_1_2_3a, stairs_3_item_1_2_3b, stairs_3_item_1_2_4a, stairs_3_item_1_2_4b, stairs_3_item_1_3_2a, stairs_3_item_1_3_2b, stairs_3_item_1_3_4, 
+							stairs_3_item_1_4_2a, stairs_3_item_1_4_2b, stairs_3_item_1_4_3,  
+							stairs_3_item_2_1_3a, stairs_3_item_2_1_3b, stairs_3_item_2_1_4a, stairs_3_item_2_1_4b, stairs_3_item_2_3_1a, stairs_3_item_2_3_1b, stairs_3_item_2_3_4, 
+							stairs_3_item_2_4_1a, stairs_3_item_2_4_1b, stairs_3_item_2_4_3, 
+							stairs_3_item_3_1_2a, stairs_3_item_3_1_2b, stairs_3_item_3_1_4, stairs_3_item_3_2_1a, stairs_3_item_3_2_1b, stairs_3_item_3_2_4,  
+							stairs_3_item_3_4_1, stairs_3_item_3_4_2,  
+							stairs_3_item_4_1_2a, stairs_3_item_4_1_2b, stairs_3_item_4_1_3, stairs_3_item_4_2_1a, stairs_3_item_4_2_1b, stairs_3_item_4_2_3, 
+							stairs_3_item_4_3_1, stairs_3_item_4_3_2, 
 							barracks_0_item_1, barracks_0_item_2, barracks_0_item_3, barracks_0_item_4, 
 							barracks_0_item_1_2, barracks_0_item_1_3, barracks_0_item_1_4, 
 							barracks_0_item_2_1, barracks_0_item_2_3, barracks_0_item_2_4, 
@@ -57,7 +69,15 @@ public class TextController : MonoBehaviour {
  							closet_0_item_2_1_3, closet_0_item_2_3_1, closet_0_item_2_1_4, closet_0_item_2_4_1, closet_0_item_2_3_4, closet_0_item_2_4_3, 
  							closet_0_item_3_1_2, closet_0_item_3_2_1, closet_0_item_3_1_4, closet_0_item_3_4_1, closet_0_item_3_2_4, closet_0_item_3_4_2, 
  							closet_0_item_4_1_2, closet_0_item_4_2_1, closet_0_item_4_1_3, closet_0_item_4_3_1, closet_0_item_4_2_3, closet_0_item_4_3_2, 
-							lock_4, 
+							lock_4_item_1, lock_4_item_2, lock_4_item_3, lock_4_item_4,  
+							lock_4_item_1_2, lock_4_item_1_3, lock_4_item_1_4, 
+							lock_4_item_2_1, lock_4_item_2_3, lock_4_item_2_4, 
+							lock_4_item_3_1, lock_4_item_3_2, lock_4_item_3_4, 
+							lock_4_item_4_1, lock_4_item_4_2, lock_4_item_4_3,
+							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
+							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
+							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
+							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
 							use_item_3, 
 							custodian_0, 
 							custodian_0_item_4, 
@@ -365,6 +385,274 @@ public class TextController : MonoBehaviour {
 			state_stairs_2_item_4_3_1();
 		} else if (myState == States.stairs_2_item_4_3_2) {
 			state_stairs_2_item_4_3_2();
+		} else if (myState == States.stairs_3_item_1) {
+			state_stairs_3_item_1();
+		} else if (myState == States.stairs_3_item_2) {
+			state_stairs_3_item_2();
+		} else if (myState == States.stairs_3_item_3) {
+			state_stairs_3_item_3();
+		} else if (myState == States.stairs_3_item_4) {
+			state_stairs_3_item_4();
+		} else if (myState == States.stairs_3_item_1_2a) {
+			state_stairs_3_item_1_2a();
+		} else if (myState == States.stairs_3_item_1_2b) {
+			state_stairs_3_item_1_2b();
+		} else if (myState == States.stairs_3_item_1_3) {
+			state_stairs_3_item_1_3();
+		} else if (myState == States.stairs_3_item_1_4) {
+			state_stairs_3_item_1_4();
+		} else if (myState == States.stairs_3_item_2_1a) {
+			state_stairs_3_item_2_1a();
+		} else if (myState == States.stairs_3_item_2_1b) {
+			state_stairs_3_item_2_1b();
+		} else if (myState == States.stairs_3_item_2_3) {
+			state_stairs_3_item_2_3();
+		} else if (myState == States.stairs_3_item_2_4) {
+			state_stairs_3_item_2_4();
+		} else if (myState == States.stairs_3_item_3_1) {
+			state_stairs_3_item_3_1();
+		} else if (myState == States.stairs_3_item_3_2) {
+			state_stairs_3_item_3_2();
+		} else if (myState == States.stairs_3_item_3_4) {
+			state_stairs_3_item_3_4();
+		} else if (myState == States.stairs_3_item_4_1) {
+			state_stairs_3_item_4_1();
+		} else if (myState == States.stairs_3_item_4_2) {
+			state_stairs_3_item_4_2();
+		} else if (myState == States.stairs_3_item_4_3) {
+			state_stairs_3_item_4_3();
+		} else if (myState == States.stairs_3_item_1_2_3a) {
+			state_stairs_3_item_1_2_3a();
+		} else if (myState == States.stairs_3_item_1_2_3b) {
+			state_stairs_3_item_1_2_3b();
+		} else if (myState == States.stairs_3_item_1_2_4a) {
+			state_stairs_3_item_1_2_4a();
+		} else if (myState == States.stairs_3_item_1_2_4b) {
+			state_stairs_3_item_1_2_4b();
+		} else if (myState == States.stairs_3_item_1_3_2a) {
+			state_stairs_3_item_1_3_2a();
+		} else if (myState == States.stairs_3_item_1_3_2b) {
+			state_stairs_3_item_1_3_2b();
+		} else if (myState == States.stairs_3_item_1_3_4) {
+			state_stairs_3_item_1_3_4();
+		} else if (myState == States.stairs_3_item_1_4_2a) {
+			state_stairs_3_item_1_4_2a();
+		} else if (myState == States.stairs_3_item_1_4_2b) {
+			state_stairs_3_item_1_4_2b();
+		} else if (myState == States.stairs_3_item_1_4_3) {
+			state_stairs_3_item_1_4_3();
+		} else if (myState == States.stairs_3_item_2_1_3a) {
+			state_stairs_3_item_2_1_3a();
+		} else if (myState == States.stairs_3_item_2_1_3b) {
+			state_stairs_3_item_2_1_3b();
+		} else if (myState == States.stairs_3_item_2_1_4a) {
+			state_stairs_3_item_2_1_4a();
+		} else if (myState == States.stairs_3_item_2_1_4b) {
+			state_stairs_3_item_2_1_4b();
+		} else if (myState == States.stairs_3_item_2_3_1a) {
+			state_stairs_3_item_2_3_1a();
+		} else if (myState == States.stairs_3_item_2_3_1b) {
+			state_stairs_3_item_2_3_1b();
+		} else if (myState == States.stairs_3_item_2_3_4) {
+			state_stairs_3_item_2_3_4();
+		} else if (myState == States.stairs_3_item_2_4_1a) {
+			state_stairs_3_item_2_4_1a();
+		} else if (myState == States.stairs_3_item_2_4_1b) {
+			state_stairs_3_item_2_4_1b();
+		} else if (myState == States.stairs_3_item_2_4_3) {
+			state_stairs_3_item_2_4_3();
+		} else if (myState == States.stairs_3_item_3_1_2a) {
+			state_stairs_3_item_3_1_2a();
+		} else if (myState == States.stairs_3_item_3_1_2b) {
+			state_stairs_3_item_3_1_2b();
+		} else if (myState == States.stairs_3_item_3_1_4) {
+			state_stairs_3_item_3_1_4();
+		} else if (myState == States.stairs_3_item_3_2_1a) {
+			state_stairs_3_item_3_2_1a();
+		} else if (myState == States.stairs_3_item_3_2_1b) {
+			state_stairs_3_item_3_2_1b();
+		} else if (myState == States.stairs_3_item_3_2_4) {
+			state_stairs_3_item_3_2_4();
+		} else if (myState == States.stairs_3_item_3_4_1) {
+			state_stairs_3_item_3_4_1();
+		} else if (myState == States.stairs_3_item_3_4_2) {
+			state_stairs_3_item_3_4_2();
+		} else if (myState == States.stairs_3_item_4_1_2a) {
+			state_stairs_3_item_4_1_2a();
+		} else if (myState == States.stairs_3_item_4_1_2b) {
+			state_stairs_3_item_4_1_2b();
+		} else if (myState == States.stairs_3_item_4_1_3) {
+			state_stairs_3_item_4_1_3();
+		} else if (myState == States.stairs_3_item_4_2_1a) {
+			state_stairs_3_item_4_2_1a();
+		} else if (myState == States.stairs_3_item_4_2_1b) {
+			state_stairs_3_item_4_2_1b();
+		} else if (myState == States.stairs_3_item_4_2_3) {
+			state_stairs_3_item_4_2_3();
+		} else if (myState == States.stairs_3_item_4_3_1) {
+			state_stairs_3_item_4_3_1();
+		} else if (myState == States.stairs_3_item_4_3_2) {
+			state_stairs_3_item_4_3_2();
+		} else if (myState == States.barracks_0_item_1) {
+			state_barracks_0_item_1();
+		} else if (myState == States.barracks_0_item_2) {
+			state_barracks_0_item_2();
+		} else if (myState == States.barracks_0_item_3) {
+			state_barracks_0_item_3();
+		} else if (myState == States.barracks_0_item_4) {
+			state_barracks_0_item_4();
+		} else if (myState == States.barracks_0_item_1_2) {
+			state_barracks_0_item_1_2();
+		} else if (myState == States.barracks_0_item_1_3) {
+			state_barracks_0_item_1_3();
+		} else if (myState == States.barracks_0_item_1_4) {
+			state_barracks_0_item_1_4();
+		} else if (myState == States.barracks_0_item_2_1) {
+			state_barracks_0_item_2_1();
+		} else if (myState == States.barracks_0_item_2_3) {
+			state_barracks_0_item_2_3();
+		} else if (myState == States.barracks_0_item_2_4) {
+			state_barracks_0_item_2_4();
+		} else if (myState == States.barracks_0_item_3_1) {
+			state_barracks_0_item_3_1();
+		} else if (myState == States.barracks_0_item_3_2) {
+			state_barracks_0_item_3_2();
+		} else if (myState == States.barracks_0_item_3_4) {
+			state_barracks_0_item_3_4();
+		} else if (myState == States.barracks_0_item_4_1) {
+			state_barracks_0_item_4_1();
+		} else if (myState == States.barracks_0_item_4_2) {
+			state_barracks_0_item_4_2();
+		} else if (myState == States.barracks_0_item_4_3) {
+			state_barracks_0_item_4_3();
+		} else if (myState == States.barracks_0_item_1_2_3) {
+			state_barracks_0_item_1_2_3();
+		} else if (myState == States.barracks_0_item_1_2_4) {
+			state_barracks_0_item_1_2_4();
+		} else if (myState == States.barracks_0_item_1_3_2) {
+			state_barracks_0_item_1_3_2();
+		} else if (myState == States.barracks_0_item_1_3_4) {
+			state_barracks_0_item_1_3_4();
+		} else if (myState == States.barracks_0_item_1_4_2) {
+			state_barracks_0_item_1_4_2();
+		} else if (myState == States.barracks_0_item_1_4_3) {
+			state_barracks_0_item_1_4_3();
+		} else if (myState == States.barracks_0_item_2_1_3) {
+			state_barracks_0_item_2_1_3();
+		} else if (myState == States.barracks_0_item_2_1_4) {
+			state_barracks_0_item_2_1_4();
+		} else if (myState == States.barracks_0_item_2_3_1) {
+			state_barracks_0_item_2_3_1();
+		} else if (myState == States.barracks_0_item_2_3_4) {
+			state_barracks_0_item_2_3_4();
+		} else if (myState == States.barracks_0_item_2_4_1) {
+			state_barracks_0_item_2_4_1();
+		} else if (myState == States.barracks_0_item_2_4_3) {
+			state_barracks_0_item_2_4_3();
+		} else if (myState == States.barracks_0_item_3_1_2) {
+			state_barracks_0_item_3_1_2();
+		} else if (myState == States.barracks_0_item_3_1_4) {
+			state_barracks_0_item_3_1_4();
+		} else if (myState == States.barracks_0_item_3_2_1) {
+			state_barracks_0_item_3_2_1();
+		} else if (myState == States.barracks_0_item_3_2_4) {
+			state_barracks_0_item_3_2_4();
+		} else if (myState == States.barracks_0_item_3_4_1) {
+			state_barracks_0_item_3_4_1();
+		} else if (myState == States.barracks_0_item_3_4_2) {
+			state_barracks_0_item_3_4_2();
+		} else if (myState == States.barracks_0_item_4_1_2) {
+			state_barracks_0_item_4_1_2();
+		} else if (myState == States.barracks_0_item_4_1_3) {
+			state_barracks_0_item_4_1_3();
+		} else if (myState == States.barracks_0_item_4_2_1) {
+			state_barracks_0_item_4_2_1();
+		} else if (myState == States.barracks_0_item_4_2_3) {
+			state_barracks_0_item_4_2_3();
+		} else if (myState == States.barracks_0_item_4_3_1) {
+			state_barracks_0_item_4_3_1();
+		} else if (myState == States.barracks_0_item_4_3_2) {
+			state_barracks_0_item_4_3_2();
+		} else if (myState == States.closet_0_item_1) {
+			state_closet_0_item_1();
+		} else if (myState == States.closet_0_item_2) {
+			state_closet_0_item_2();
+		} else if (myState == States.closet_0_item_3) {
+			state_closet_0_item_3();
+		} else if (myState == States.closet_0_item_4) {
+			state_closet_0_item_4();
+		} else if (myState == States.closet_0_item_1_2) {
+			state_closet_0_item_1_2();
+		} else if (myState == States.closet_0_item_1_3) {
+			state_closet_0_item_1_3();
+		} else if (myState == States.closet_0_item_1_4) {
+			state_closet_0_item_1_4();
+		} else if (myState == States.closet_0_item_2_1) {
+			state_closet_0_item_2_1();
+		} else if (myState == States.closet_0_item_2_3) {
+			state_closet_0_item_2_3();
+		} else if (myState == States.closet_0_item_2_4) {
+			state_closet_0_item_2_4();
+		} else if (myState == States.closet_0_item_3_1) {
+			state_closet_0_item_3_1();
+		} else if (myState == States.closet_0_item_3_2) {
+			state_closet_0_item_3_2();
+		} else if (myState == States.closet_0_item_3_4) {
+			state_closet_0_item_3_4();
+		} else if (myState == States.closet_0_item_4_1) {
+			state_closet_0_item_4_1();
+		} else if (myState == States.closet_0_item_4_2) {
+			state_closet_0_item_4_2();
+		} else if (myState == States.closet_0_item_4_3) {
+			state_closet_0_item_4_3();
+		} else if (myState == States.closet_0_item_1_2_3) {
+			state_closet_0_item_1_2_3();
+		} else if (myState == States.closet_0_item_1_2_4) {
+			state_closet_0_item_1_2_4();
+		} else if (myState == States.closet_0_item_1_3_2) {
+			state_closet_0_item_1_3_2();
+		} else if (myState == States.closet_0_item_1_3_4) {
+			state_closet_0_item_1_3_4();
+		} else if (myState == States.closet_0_item_1_4_2) {
+			state_closet_0_item_1_4_2();
+		} else if (myState == States.closet_0_item_1_4_3) {
+			state_closet_0_item_1_4_3();
+		} else if (myState == States.closet_0_item_2_1_3) {
+			state_closet_0_item_2_1_3();
+		} else if (myState == States.closet_0_item_2_1_4) {
+			state_closet_0_item_2_1_4();
+		} else if (myState == States.closet_0_item_2_3_1) {
+			state_closet_0_item_2_3_1();
+		} else if (myState == States.closet_0_item_2_3_4) {
+			state_closet_0_item_2_3_4();
+		} else if (myState == States.closet_0_item_2_4_1) {
+			state_closet_0_item_2_4_1();
+		} else if (myState == States.closet_0_item_2_4_3) {
+			state_closet_0_item_2_4_3();
+		} else if (myState == States.closet_0_item_3_1_2) {
+			state_closet_0_item_3_1_2();
+		} else if (myState == States.closet_0_item_3_1_4) {
+			state_closet_0_item_3_1_4();
+		} else if (myState == States.closet_0_item_3_2_1) {
+			state_closet_0_item_3_2_1();
+		} else if (myState == States.closet_0_item_3_2_4) {
+			state_closet_0_item_3_2_4();
+		} else if (myState == States.closet_0_item_3_4_1) {
+			state_closet_0_item_3_4_1();
+		} else if (myState == States.closet_0_item_3_4_2) {
+			state_closet_0_item_3_4_2();
+		} else if (myState == States.closet_0_item_4_1_2) {
+			state_closet_0_item_4_1_2();
+		} else if (myState == States.closet_0_item_4_1_3) {
+			state_closet_0_item_4_1_3();
+		} else if (myState == States.closet_0_item_4_2_1) {
+			state_closet_0_item_4_2_1();
+		} else if (myState == States.closet_0_item_4_2_3) {
+			state_closet_0_item_4_2_3();
+		} else if (myState == States.closet_0_item_4_3_1) {
+			state_closet_0_item_4_3_1();
+		} else if (myState == States.closet_0_item_4_3_2) {
+			state_closet_0_item_4_3_2();
 		}
 	}
 		
@@ -1594,20 +1882,20 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_1; 
+			myState = States.stairs_3_item_1; 
 		}
 		}
 		
 		void state_stairs_2_item_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_2; 
+			myState = States.stairs_3_item_2; 
 		}
 		}
 		
@@ -1617,7 +1905,7 @@ public class TextController : MonoBehaviour {
 						"You feel confident to continue down the stairs. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.stairs_3; 
+			myState = States.stairs_3_item_3; 
 		}
 		}
 		
@@ -1627,91 +1915,91 @@ public class TextController : MonoBehaviour {
 						"You feel confident to continue down the stairs. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.stairs_3; 
+			myState = States.stairs_3_item_4; 
 		}
 		}
 		
 		void state_stairs_2_item_1_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the darkness using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
-			myState = States.stairs_2_use_item_1; 
+			myState = States.stairs_3_item_1_2a; 
 		} else if (Input.GetKeyDown(KeyCode.F)) {
-			myState = States.stairs_2_use_item_2; 
+			myState = States.stairs_3_item_1_2b; 
 		}
 		}
 		
 		void state_stairs_2_item_1_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_1; 
+			myState = States.stairs_3_item_1_3; 
 		}
 		}
 		
 		void state_stairs_2_item_1_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_1; 
+			myState = States.stairs_3_item_1_4; 
 		}
 		}
 		
 		void state_stairs_2_item_2_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the darkness using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
-			myState = States.stairs_2_use_item_1; 
+			myState = States.stairs_3_item_2_1a; 
 		} else if (Input.GetKeyDown(KeyCode.F)) {
-			myState = States.stairs_2_use_item_2; 
+			myState = States.stairs_3_item_2_1b; 
 		}
 		}
 		
 		void state_stairs_2_item_2_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_2; 
+			myState = States.stairs_3_item_2_3; 
 		}
 		}
 		
 		void state_stairs_2_item_2_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_2; 
+			myState = States.stairs_3_item_2_4; 
 		}
 		}
 		
 		void state_stairs_2_item_3_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_1; 
+			myState = States.stairs_3_item_3_1; 
 		}
 		}
 		
 		void state_stairs_2_item_3_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
-			myState = States.stairs_2_use_item_2; 
+			myState = States.stairs_3_item_3_2; 
 		}
 		}
 		
@@ -1721,8 +2009,844 @@ public class TextController : MonoBehaviour {
 						"You feel confident to continue down the stairs. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
-			myState = States.stairs_3; 
+			myState = States.stairs_3_item_3_4; 
 		}
 		}
+		
+		void state_stairs_2_item_4_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_4_1; 
+		}
+		}
+		
+		void state_stairs_2_item_4_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Flashlight at your disposal. " +
+						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_4_2; 
+		}
+		}
+		
+		void state_stairs_2_item_4_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a sharp Screwdriver and shiny Brass knuckles at your disposal. " +
+						"You feel confident to continue down the stairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.stairs_3_item_4_3; 
+		}
+		}
+		
+		void state_stairs_2_item_1_2_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_1_2_3a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_1_2_3b; 
+		}
+		}
+		
+		void state_stairs_2_item_1_2_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_1_2_4a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_1_2_4b; 
+		}
+		}
+		
+		void state_stairs_2_item_1_3_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_1_3_2a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_1_3_2b; 
+		}
+		}
+		
+		void state_stairs_2_item_1_3_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_1_3_4; 
+		}
+		}
+		
+		void state_stairs_2_item_1_4_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_1_4_2a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_1_4_2b; 
+		}
+		}
+		
+		void state_stairs_2_item_1_4_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_1_4_3; 
+		}
+		}
+		
+		void state_stairs_2_item_2_1_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_2_1_3a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_2_1_3b; 
+		}
+		}
+		
+		void state_stairs_2_item_2_1_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_2_1_4a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_2_1_4b; 
+		}
+		}
+		
+		void state_stairs_2_item_2_3_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_2_3_1a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_2_3_1b; 
+		}
+		}
+		
+		void state_stairs_2_item_2_3_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_2_3_4; 
+		}
+		}
+		
+		void state_stairs_2_item_2_4_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_2_4_1a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_2_4_1b; 
+		}
+		}
+		
+		void state_stairs_2_item_2_4_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_2_4_3; 
+		}
+		}
+		
+		void state_stairs_2_item_3_1_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_3_1_2a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_3_1_2b; 
+		}
+		}
+		
+		void state_stairs_2_item_3_1_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_3_1_4; 
+		}
+		}
+		
+		void state_stairs_2_item_3_2_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_3_2_1a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_3_2_1b; 
+		}
+		}
+		
+		void state_stairs_2_item_3_2_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Flashlight at your disposal. " +
+						"You are able to clear the shadows using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_3_2_4; 
+		}
+		}
+		
+		void state_stairs_2_item_3_4_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_3_4_1; 
+		}
+		}
+		
+		void state_stairs_2_item_3_4_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Flashlight at your disposal. " +
+						"You are able to clear the shadows using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_3_4_2; 
+		}
+		}
+		
+		void state_stairs_2_item_4_1_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_4_1_2a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_4_1_2b; 
+		}
+		}
+		
+		void state_stairs_2_item_4_1_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_4_1_3; 
+		}
+		}
+		
+		void state_stairs_2_item_4_2_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_3_item_4_2_1a; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_3_item_4_2_1b; 
+		}
+		}
+		
+		void state_stairs_2_item_4_2_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_4_2_3; 
+		}
+		}
+		
+		void state_stairs_2_item_4_3_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_4_3_1; 
+		}
+		}
+		
+		void state_stairs_2_item_4_3_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_3_item_4_3_2; 
+		}
+		}
+		
+		void state_stairs_3_item_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1; 
+		}
+		}
+		
+		void state_stairs_3_item_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2; 
+		}
+		}
+		
+		void state_stairs_3_item_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3; 
+		}
+		}
+		
+		void state_stairs_3_item_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4; 
+		}
+		}
+		
+		void state_stairs_3_item_1_2a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_2; 
+		}
+		}
+		
+		void state_stairs_3_item_1_2b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_2; 
+		}
+		}
+		
+		void state_stairs_3_item_1_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_3; 
+		}
+		}
+		
+		void state_stairs_3_item_1_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_4; 
+		}
+		}
+		
+		void state_stairs_3_item_2_1a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_1; 
+		}
+		}
+		
+		void state_stairs_3_item_2_1b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_1; 
+		}
+		}
+		
+		void state_stairs_3_item_2_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_3; 
+		}
+		}
+		
+		void state_stairs_3_item_2_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_4; 
+		}
+		}
+		
+		void state_stairs_3_item_3_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_1; 
+		}
+		}
+		
+		void state_stairs_3_item_3_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_2; 
+		}
+		}
+		
+		void state_stairs_3_item_3_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_4; 
+		}
+		}
+		
+		void state_stairs_3_item_4_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_1; 
+		}
+		}
+		
+		void state_stairs_3_item_4_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_2; 
+		}
+		}
+		
+		void state_stairs_3_item_4_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_3; 
+		}
+		}
+		
+		void state_stairs_3_item_1_2_3a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_2_3; 
+		}
+		}
+		
+		void state_stairs_3_item_1_2_3b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_2_3; 
+		}
+		}
+		
+		void state_stairs_3_item_1_2_4a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_2_4; 
+		}
+		}
+		
+		void state_stairs_3_item_1_2_4b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_2_4; 
+		}
+		}
+		
+		void state_stairs_3_item_1_3_2a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_3_2; 
+		}
+		}
+		
+		void state_stairs_3_item_1_3_2b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_3_2; 
+		}
+		}
+		
+		void state_stairs_3_item_1_3_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_3_4; 
+		}
+		}
+		
+		void state_stairs_3_item_1_4_2a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_4_2; 
+		}
+		}
+		
+		void state_stairs_3_item_1_4_2b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_4_2; 
+		}
+		}
+		
+		void state_stairs_3_item_1_4_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_1_4_3; 
+		}
+		}
+		
+		void state_stairs_3_item_2_1_3a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_1_3; 
+		}
+		}
+		
+		void state_stairs_3_item_2_1_3b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_1_3; 
+		}
+		}
+		
+		void state_stairs_3_item_2_1_4a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_1_4; 
+		}
+		}
+		
+		void state_stairs_3_item_2_1_4b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_1_4; 
+		}
+		}
+		
+		void state_stairs_3_item_2_3_1a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_3_1; 
+		}
+		}
+		
+		void state_stairs_3_item_2_3_1b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_3_1; 
+		}
+		}
+		
+		void state_stairs_3_item_2_3_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_3_4; 
+		}
+		}
+		
+		void state_stairs_3_item_2_4_1a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_4_1; 
+		}
+		}
+		
+		void state_stairs_3_item_2_4_1b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_4_1; 
+		}
+		}
+		
+		void state_stairs_3_item_2_4_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_2_4_3; 
+		}
+		}
+		
+		void state_stairs_3_item_3_1_2a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_1_2; 
+		}
+		}
+		
+		void state_stairs_3_item_3_1_2b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_1_2; 
+		}
+		}
+		
+		void state_stairs_3_item_3_1_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_1_4; 
+		}
+		}
+		
+		void state_stairs_3_item_3_2_1a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_2_1; 
+		}
+		}
+		
+		void state_stairs_3_item_3_2_1b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_2_1; 
+		}
+		}
+		
+		void state_stairs_3_item_3_2_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_2_4; 
+		}
+		}
+		
+		void state_stairs_3_item_3_4_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_4_1; 
+		}
+		}
+		
+		void state_stairs_3_item_3_4_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_3_4_2; 
+		}
+		}
+		
+		void state_stairs_3_item_4_1_2a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_1_2; 
+		}
+		}
+		
+		void state_stairs_3_item_4_1_2b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_1_2; 
+		}
+		}
+		
+		void state_stairs_3_item_4_1_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_1_3; 
+		}
+		}
+		
+		void state_stairs_3_item_4_2_1a () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_2_1; 
+		}
+		}
+		
+		void state_stairs_3_item_4_2_1b () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_2_1; 
+		}
+		}
+		
+		void state_stairs_3_item_4_2_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_2_3; 
+		}
+		}
+		
+		void state_stairs_3_item_4_3_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_3_1; 
+		}
+		}
+		
+		void state_stairs_3_item_4_3_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.barracks_0_item_4_3_2; 
+		}
+		}
+		
+		
 		
 }
