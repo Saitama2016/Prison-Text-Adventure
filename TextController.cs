@@ -285,6 +285,86 @@ public class TextController : MonoBehaviour {
 			state_corridor_2_item_4_3_1();
 		} else if (myState == States.corridor_2_item_4_3_2) {
 			state_corridor_2_item_4_3_2();
+		} else if (myState == States.stairs_2_item_1) {
+			state_stairs_2_item_1();
+		} else if (myState == States.stairs_2_item_2) {
+			state_stairs_2_item_2();
+		} else if (myState == States.stairs_2_item_3) {
+			state_stairs_2_item_3();
+		} else if (myState == States.stairs_2_item_4) {
+			state_stairs_2_item_4();
+		} else if (myState == States.stairs_2_item_1_2) {
+			state_stairs_2_item_1_2();
+		} else if (myState == States.stairs_2_item_1_3) {
+			state_stairs_2_item_1_3();
+		} else if (myState == States.stairs_2_item_1_4) {
+			state_stairs_2_item_1_4();
+		} else if (myState == States.stairs_2_item_2_1) {
+			state_stairs_2_item_2_1();
+		} else if (myState == States.stairs_2_item_2_3) {
+			state_stairs_2_item_2_3();
+		} else if (myState == States.stairs_2_item_2_4) {
+			state_stairs_2_item_2_4();
+		} else if (myState == States.stairs_2_item_3_1) {
+			state_stairs_2_item_3_1();
+		} else if (myState == States.stairs_2_item_3_2) {
+			state_stairs_2_item_3_2();
+		} else if (myState == States.stairs_2_item_3_4) {
+			state_stairs_2_item_3_4();
+		} else if (myState == States.stairs_2_item_4_1) {
+			state_stairs_2_item_4_1();
+		} else if (myState == States.stairs_2_item_4_2) {
+			state_stairs_2_item_4_2();
+		} else if (myState == States.stairs_2_item_4_3) {
+			state_stairs_2_item_4_3();
+		} else if (myState == States.stairs_2_item_1_2_3) {
+			state_stairs_2_item_1_2_3();
+		} else if (myState == States.stairs_2_item_1_2_4) {
+			state_stairs_2_item_1_2_4();
+		} else if (myState == States.stairs_2_item_1_3_2) {
+			state_stairs_2_item_1_3_2();
+		} else if (myState == States.stairs_2_item_1_3_4) {
+			state_stairs_2_item_1_3_4();
+		} else if (myState == States.stairs_2_item_1_4_2) {
+			state_stairs_2_item_1_4_2();
+		} else if (myState == States.stairs_2_item_1_4_3) {
+			state_stairs_2_item_1_4_3();
+		} else if (myState == States.stairs_2_item_2_1_3) {
+			state_stairs_2_item_2_1_3();
+		} else if (myState == States.stairs_2_item_2_1_4) {
+			state_stairs_2_item_2_1_4();
+		} else if (myState == States.stairs_2_item_2_3_1) {
+			state_stairs_2_item_2_3_1();
+		} else if (myState == States.stairs_2_item_2_3_4) {
+			state_stairs_2_item_2_3_4();
+		} else if (myState == States.stairs_2_item_2_4_1) {
+			state_stairs_2_item_2_4_1();
+		} else if (myState == States.stairs_2_item_2_4_3) {
+			state_stairs_2_item_2_4_3();
+		} else if (myState == States.stairs_2_item_3_1_2) {
+			state_stairs_2_item_3_1_2();
+		} else if (myState == States.stairs_2_item_3_1_4) {
+			state_stairs_2_item_3_1_4();
+		} else if (myState == States.stairs_2_item_3_2_1) {
+			state_stairs_2_item_3_2_1();
+		} else if (myState == States.stairs_2_item_3_2_4) {
+			state_stairs_2_item_3_2_4();
+		} else if (myState == States.stairs_2_item_3_4_1) {
+			state_stairs_2_item_3_4_1();
+		} else if (myState == States.stairs_2_item_3_4_2) {
+			state_stairs_2_item_3_4_2();
+		} else if (myState == States.stairs_2_item_4_1_2) {
+			state_stairs_2_item_4_1_2();
+		} else if (myState == States.stairs_2_item_4_1_3) {
+			state_stairs_2_item_4_1_3();
+		} else if (myState == States.stairs_2_item_4_2_1) {
+			state_stairs_2_item_4_2_1();
+		} else if (myState == States.stairs_2_item_4_2_3) {
+			state_stairs_2_item_4_2_3();
+		} else if (myState == States.stairs_2_item_4_3_1) {
+			state_stairs_2_item_4_3_1();
+		} else if (myState == States.stairs_2_item_4_3_2) {
+			state_stairs_2_item_4_3_2();
 		}
 	}
 		
@@ -1184,7 +1264,7 @@ public class TextController : MonoBehaviour {
 		void state_corridor_2_item_2_1 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
 						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"Oh well, you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2_1; 
@@ -1193,324 +1273,456 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_2_3 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_3; 
 		}
 		}
 		
 		void state_corridor_2_item_2_4 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Good job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_4; 
 		}
 		}
 		
 		void state_corridor_2_item_3_1 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_2 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_2; 
 		}
 		}
 		
 		void state_corridor_2_item_3_4 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_4; 
 		}
 		}
 		
 		void state_corridor_2_item_4_1 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Good job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_2 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Good job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_2; 
 		}
 		}
 		
 		void state_corridor_2_item_4_3 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_3; 
 		}
 		}
 		
 		void state_corridor_2_item_1_2_3 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_1_2_3; 
 		}
 		}
 		
 		void state_corridor_2_item_1_2_4 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_1_2_4; 
 		}
 		}
 		
 		void state_corridor_2_item_1_3_2 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_1_3_2; 
 		}
 		}
 		
 		void state_corridor_2_item_1_3_4 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_1_3_4; 
 		}
 		}
 		
 		void state_corridor_2_item_1_4_2 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_1_4_2; 
 		}
 		}
 		
 		void state_corridor_2_item_1_4_3 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_1_4_3; 
 		}
 		}
 		
 		void state_corridor_2_item_2_1_3 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_1_3; 
 		}
 		}
 		
 		void state_corridor_2_item_2_1_4 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_1_4; 
 		}
 		}
 		
 		void state_corridor_2_item_2_3_1 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_3_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_3_4 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_3_4; 
 		}
 		}
 		
 		void state_corridor_2_item_2_4_1 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_4_1; 
 		}
 		}
 		
 		void state_corridor_2_item_2_4_3 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_2_4_3; 
 		}
 		}
 		
 		void state_corridor_2_item_3_1_2 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_1_2; 
 		}
 		}
 		
 		void state_corridor_2_item_3_1_4 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_1_4; 
 		}
 		}
 		
 		void state_corridor_2_item_3_2_1 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_2_4 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_2_4; 
 		}
 		}
 		
 		void state_corridor_2_item_3_4_1 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_4_1; 
 		}
 		}
 		
 		void state_corridor_2_item_3_4_2 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_3_4_2; 
 		}
 		}
 		
 		void state_corridor_2_item_4_1_2 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_1_2; 
 		}
 		}
 		
 		void state_corridor_2_item_4_1_3 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_1_3; 
 		}
 		}
 		
 		void state_corridor_2_item_4_2_1 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have knocked out a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_2_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_2_3 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_2_3; 
 		}
 		}
 		
 		void state_corridor_2_item_4_3_1 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
-			myState = States.stairs_2_item_2_1; 
+			myState = States.stairs_2_item_4_3_1; 
 		}
 		}
 		
 		void state_corridor_2_item_4_3_2 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You should have grabbed a weapon when you had the chance! " +
-						"Oh, well have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. " +
+						"Great job, now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4_3_2; 
 		}
 		}
 		
+		void state_stairs_2_item_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_1; 
+		}
+		}
 		
+		void state_stairs_2_item_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Flashlight at your disposal. " +
+						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_2; 
+		}
+		}
+		
+		void state_stairs_2_item_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a sharp Screwdriver at your disposal. " +
+						"You feel confident to continue down the stairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.stairs_3; 
+		}
+		}
+		
+		void state_stairs_2_item_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a shiny pair of Brass knuckles at your disposal. " +
+						"You feel confident to continue down the stairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.stairs_3; 
+		}
+		}
+		
+		void state_stairs_2_item_1_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the darkness using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_2_use_item_1; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_2_use_item_2; 
+		}
+		}
+		
+		void state_stairs_2_item_1_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_1; 
+		}
+		}
+		
+		void state_stairs_2_item_1_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_1; 
+		}
+		}
+		
+		void state_stairs_2_item_2_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter and Flashlight at your disposal. " +
+						"You are able to clear the darkness using a Lighter or a Flashlight. \n\n" +
+						"Press L to use the Lighter, or Press F to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.stairs_2_use_item_1; 
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			myState = States.stairs_2_use_item_2; 
+		}
+		}
+		
+		void state_stairs_2_item_2_3 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Flashlight at your disposal. " +
+						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_2; 
+		}
+		}
+		
+		void state_stairs_2_item_2_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Flashlight at your disposal. " +
+						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_2; 
+		}
+		}
+		
+		void state_stairs_2_item_3_1 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Lighter at your disposal. " +
+						"You are able to clear a portion of the darkness using the lighter. \n\n" +
+						"Press U to use the Lighter!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_1; 
+		}
+		}
+		
+		void state_stairs_2_item_3_2 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a fully functional Flashlight at your disposal. " +
+						"You are able to clear a portion of the darkness using the Flashlight. \n\n" +
+						"Press U to use the Flashlight!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
+			myState = States.stairs_2_use_item_2; 
+		}
+		}
+		
+		void state_stairs_2_item_3_4 () {
+			text.text = "You approached the stairs overwhelming with darkness. " +
+						"You have a sharp Screwdriver and shiny Brass knuckles at your disposal. " +
+						"You feel confident to continue down the stairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.stairs_3; 
+		}
+		}
 		
 }
