@@ -2477,7 +2477,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2517,7 +2517,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_1_2b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2557,7 +2557,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_1b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2567,7 +2567,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_3 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2577,7 +2577,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_4 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2597,7 +2597,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_3_2 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2627,7 +2627,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_4_2 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2657,7 +2657,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_1_2_3b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2677,7 +2677,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_1_2_4b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2697,7 +2697,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_1_3_2b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2727,7 +2727,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_1_4_2b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2757,7 +2757,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_1_3b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2777,7 +2777,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_1_4b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2797,7 +2797,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_3_1b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2807,7 +2807,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_3_4 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2827,7 +2827,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_4_1b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2837,7 +2837,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_2_4_3 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2857,7 +2857,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_3_1_2b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2887,7 +2887,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_3_2_1b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2897,7 +2897,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_3_2_4 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2917,7 +2917,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_3_4_2 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2937,7 +2937,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_4_1_2b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2967,7 +2967,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_4_2_1b () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2977,7 +2977,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_4_2_3 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -2997,7 +2997,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_stairs_3_item_4_3_2 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -3006,931 +3006,878 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1; 
 		}
 		}
 		
 		void state_barracks_0_item_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2; 
 		}
 		}
 		
 		void state_barracks_0_item_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3; 
 		}
 		}
 		
 		void state_barracks_0_item_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4; 
 		}
 		}
 		
 		void state_barracks_0_item_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_2; 
 		}
 		}
 		
 		void state_barracks_0_item_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_3; 
 		}
 		}
 		
 		void state_barracks_0_item_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_4; 
 		}
 		}
 		
 		void state_barracks_0_item_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_1; 
 		}
 		}
 		
 		void state_barracks_0_item_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_3; 
 		}
 		}
 		
 		void state_barracks_0_item_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_4; 
 		}
 		}
 		
 		void state_barracks_0_item_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_1; 
 		}
 		}
 		
 		void state_barracks_0_item_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_2; 
 		}
 		}
 		
 		void state_barracks_0_item_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_4; 
 		}
 		}
 		
 		void state_barracks_0_item_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_1; 
 		}
 		}
 		
 		void state_barracks_0_item_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_2; 
 		}
 		}
 		
 		void state_barracks_0_item_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_3; 
 		}
 		}
 		
 		void state_barracks_0_item_1_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_2_3; 
 		}
 		}
 		
 		void state_barracks_0_item_1_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_2_4; 
 		}
 		}
 		
 		void state_barracks_0_item_1_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_3_2; 
 		}
 		}
 		
 		void state_barracks_0_item_1_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_3_4; 
 		}
 		}
 		
 		void state_barracks_0_item_1_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_4_2; 
 		}
 		}
 		
 		void state_barracks_0_item_1_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_1_2_3; 
 		}
 		}
 		
 		void state_barracks_0_item_2_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_1_3; 
 		}
 		}
 		
 		void state_barracks_0_item_2_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_1_4; 
 		}
 		}
 		
 		void state_barracks_0_item_2_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_3_1; 
 		}
 		}
 		
 		void state_barracks_0_item_2_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_3_4; 
 		}
 		}
 		
 		void state_barracks_0_item_2_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_4_1; 
 		}
 		}
 		
 		void state_barracks_0_item_2_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_2_4_3; 
 		}
 		}
 		
 		void state_barracks_0_item_3_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_1_2; 
 		}
 		}
 		
 		void state_barracks_0_item_3_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_1_4; 
 		}
 		}
 		
 		void state_barracks_0_item_3_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_2_1; 
 		}
 		}
 		
 		void state_barracks_0_item_3_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_2_4; 
 		}
 		}
 		
 		void state_barracks_0_item_3_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_4_1; 
 		}
 		}
 		
 		void state_barracks_0_item_3_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_3_4_2; 
 		}
 		}
 		
 		void state_barracks_0_item_4_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_1_2; 
 		}
 		}
 		
 		void state_barracks_0_item_4_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_1_3; 
 		}
 		}
 		
 		void state_barracks_0_item_4_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_2_1; 
 		}
 		}
 		
 		void state_barracks_0_item_4_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_2_3; 
 		}
 		}
 		
 		void state_barracks_0_item_4_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_3_1; 
 		}
 		}
 		
 		void state_barracks_0_item_4_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+						"At your right you found a closet that stores the uniforms of the prison guards. " +
+						"You don't have much time to waste so you rush to the closet door. \n\n" +
+						"Press C to observe the closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.closet_0_item_4_3_2; 
 		}
 		}
 		
 		void state_closet_0_item_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1; 
 		}
 		}
 		
 		void state_closet_0_item_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2; 
 		}
 		}
 		
 		void state_closet_0_item_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3; 
 		}
 		}
 		
 		void state_closet_0_item_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4; 
 		}
 		}
 		
 		void state_closet_0_item_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_2; 
 		}
 		}
 		
 		void state_closet_0_item_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_3; 
 		}
 		}
 		
 		void state_closet_0_item_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_4; 
 		}
 		}
 		
 		void state_closet_0_item_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_1; 
 		}
 		}
 		
 		void state_closet_0_item_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_3; 
 		}
 		}
 		
 		void state_closet_0_item_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_4; 
 		}
 		}
 		
 		void state_closet_0_item_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_1; 
 		}
 		}
 		
 		void state_closet_0_item_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_2; 
 		}
 		}
 		
 		void state_closet_0_item_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_4; 
 		}
 		}
 		
 		void state_closet_0_item_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_1; 
 		}
 		}
 		
 		void state_closet_0_item_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_2; 
 		}
 		}
 		
 		void state_closet_0_item_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_3; 
 		}
 		}
 		
 		void state_closet_0_item_1_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_2_3; 
 		}
 		}
 		
 		void state_closet_0_item_1_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_2_4; 
 		}
 		}
 		
 		void state_closet_0_item_1_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_3_2; 
 		}
 		}
 		
 		void state_closet_0_item_1_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_3_4; 
 		}
 		}
 		
 		void state_closet_0_item_1_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_2_3; 
 		}
 		}
 		
 		void state_closet_0_item_1_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_1_4_3; 
 		}
 		}
 		
 		void state_closet_0_item_2_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_1_3; 
 		}
 		}
 		
 		void state_closet_0_item_2_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_1_4; 
 		}
 		}
 		
 		void state_closet_0_item_2_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_3_1; 
 		}
 		}
 		
 		void state_closet_0_item_2_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_3_4; 
 		}
 		}
 		
 		void state_closet_0_item_2_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_4_1; 
 		}
 		}
 		
 		void state_closet_0_item_2_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_2_4_3; 
 		}
 		}
 		
 		void state_closet_0_item_3_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_1_2; 
 		}
 		}
 		
 		void state_closet_0_item_3_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_1_4; 
 		}
 		}
 		
 		void state_closet_0_item_3_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_2_1; 
 		}
 		}
 		
 		void state_closet_0_item_3_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_2_4; 
 		}
 		}
 		
 		void state_closet_0_item_3_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_4_1; 
 		}
 		}
 		
 		void state_closet_0_item_3_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_3_4_2; 
 		}
 		}
 		
 		void state_closet_0_item_4_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_1_2; 
 		}
 		}
 		
 		void state_closet_0_item_4_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_1_3; 
 		}
 		}
 		
 		void state_closet_0_item_4_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_2_1; 
 		}
 		}
 		
 		void state_closet_0_item_4_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_2_3; 
 		}
 		}
 		
 		void state_closet_0_item_4_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_3_1; 
 		}
 		}
 		
 		void state_closet_0_item_4_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You raced to the closet and pull on the handles. It won't budge! " +
+						"You inspect between the handles and find a lock. \n\n" +
+						"Press L to inspect the Lock!";
+		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.lock_4_item_4_3_2; 
 		}
 		}
 		
 		void state_lock_4_item_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0; 
 		}
 		}
 		
 		void state_lock_4_item_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0; 
 		}
 		}
 		
 		void state_lock_4_item_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4; 
 		}
 		}
 		
 		void state_lock_4_item_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0; 
 		}
 		}
 		
 		void state_lock_4_item_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_1_4; 
 		}
 		}
 		
 		void state_lock_4_item_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0; 
 		}
 		}
 		
 		void state_lock_4_item_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_2_4; 
 		}
 		}
 		
 		void state_lock_4_item_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_3_4; 
@@ -3938,31 +3885,28 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_1; 
 		}
 		}
 		
 		void state_lock_4_item_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_2; 
 		}
 		}
 		
 		void state_lock_4_item_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_3; 
@@ -3970,41 +3914,37 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_1_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_1_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.custodian_0_item_1_2_4; 
 		}
 		}
 		
 		void state_lock_4_item_1_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_1_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_1_3_4; 
@@ -4012,21 +3952,19 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_1_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs. " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_1_4_2; 
 		}
 		}
 		
 		void state_lock_4_item_1_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs. " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_1_4_3; 
@@ -4034,41 +3972,37 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_2_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_2_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_2_1_4; 
 		}
 		}
 		
 		void state_lock_4_item_2_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_2_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_2_3_4; 
@@ -4076,21 +4010,19 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_2_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_2_4_1; 
 		}
 		}
 		
 		void state_lock_4_item_2_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_2_4_3; 
@@ -4098,21 +4030,19 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_3_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_3_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_3_1_4; 
@@ -4120,21 +4050,19 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_3_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You are able to unscrew all the bolts on the lock. \n\n" +
+						"Press U to use the Screwdriver!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		}
 		}
 		
 		void state_lock_4_item_3_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_3_2_4; 
@@ -4142,11 +4070,10 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_3_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_3_4_1; 
@@ -4154,11 +4081,10 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_3_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_3_4_2; 
@@ -4166,21 +4092,19 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_4_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_1_2; 
 		}
 		}
 		
 		void state_lock_4_item_4_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_1_3; 
@@ -4188,21 +4112,19 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_4_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. You try to use the bobby pin, but it broke. " +
+						"When you begin to lose hope, you turn around and found a custodial closet behind you. \n\n" +
+						"Press C to go to the Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_2_1; 
 		}
 		}
 		
 		void state_lock_4_item_4_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_2_3; 
@@ -4210,11 +4132,10 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_4_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_3_1; 
@@ -4222,11 +4143,10 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_4_item_4_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "The lock is bolted tight on the wooden door. The screws, however, match the tip of your Screwdriver. " +
+						"You check behind you to see a custodian closet. You can either unscrew the lock or find keys. \n\n" +
+						"Press U to use the Screwdriver or Press C to go to Custodian closet!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.use_item_3; 
 		} else if (Input.GetKeyDown(KeyCode.C)) {
 			myState = States.custodian_0_item_4_3_2; 
@@ -4234,22 +4154,20 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_use_item_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You successfully detach the lock on the wooden door. \n\n" +
+						"Press O to open the Closet!";
+		 if (Input.GetKeyDown(KeyCode.O)) {
 			myState = States.closet_1; 
 		}
 		}
 		
 		
 		void state_custodian_0 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. \n\n" +
+						"Press F to fight the Custodian or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4257,27 +4175,29 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
 		}
 		}
 		
 		void state_custodian_0_item_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4285,13 +4205,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4299,13 +4220,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4313,13 +4235,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4327,13 +4250,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4341,13 +4265,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4355,13 +4280,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_1_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4369,13 +4295,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_1_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4383,13 +4310,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_1_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4397,13 +4325,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_1_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4411,13 +4340,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_2_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4425,13 +4355,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_2_3_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4439,13 +4370,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_2_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4453,13 +4385,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_2_4_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4467,13 +4400,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_3_1_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4481,13 +4415,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_3_2_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4495,13 +4430,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_3_4_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4509,13 +4445,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_3_4_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4523,13 +4460,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_1_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4537,13 +4475,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_1_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4551,13 +4490,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_2_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4565,13 +4505,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_2_3 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4579,13 +4520,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_3_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4593,13 +4535,14 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_custodian_0_item_4_3_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You arrive at the custodian closet and it is slightly open. " +
+						"You slowly push the door and find yourself making eye contact with a custodian. " +
+						"The custodian is not pleased to see you, there is awkard silence, but you see keys behind the custodian. " +
+						"The custodian notices your golden Brass knuckles. \n\n" +
+						"Press T to trade Brass knuckles, Press F to fight the Custodian, or Press L to leave the Custodian alone!";
+		 if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.use_item_4; 
-		} else if (Input.GetKeyDown(KeyCode.C)) {
+		} else if (Input.GetKeyDown(KeyCode.F)) {
 			myState = States.custodian_1; 
 		} else if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.game_over_1; 
@@ -4607,68 +4550,65 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_use_item_4 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You traded your golden Brass knuckles with the custodian. " +
+						"You maintain eye contact with the custodian to chack that they will not use them against you. " +
+						"The custodian is thankful for the golden Brass knuckles and gives you the keys. \n\n" +
+						"Press K to grab the Keys!";
+		 if (Input.GetKeyDown(KeyCode.K)) {
 			myState = States.keys_0; 
 		}
 		}
 		
 		void state_custodian_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You throw a quick jab striking the custodian's nose! The custodian, attempts to tackle you! " +
+						"You move to a sprawl postion and put the custodian in a guillotine choke! The custodian punches at your rib " +
+						"cage in desperation, but you are not letting go! In 20 seconds the custodian passes out! You then reachout for the keys. \n\n" +
+						"Press K to grab the keys!";
+		 if (Input.GetKeyDown(KeyCode.K)) {
 			myState = States.keys_1; 
 		}
 		}
 		
 		void state_game_over_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
+			text.text = "You reach over the custodian to grab the keys. " +
+						"The custodian shoves you to the wall and locks you in the closet. The custodian alerts the prison guards that you " +
+						"left your cell. The guards then escort you back to your cell. You missed your opportunity to escape the Booty Warrior! \n\n" +
+						"GAME OVER! Press P to play again!";
 		 if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.cell; 
 		}
 		}
 		
 		void state_keys_0 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You are reliefed that you did not have to draw blood to get the keys. " +
+						"You quickly return to the closet found in the barracks before the prison guards arrive. \n\n" +
+						"Press I to inspect the lock!";
+		 if (Input.GetKeyDown(KeyCode.I)) {
 			myState = States.lock_5; 
 		}
 		}
 		
 		void state_keys_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You grab the keys over the custodian's body. " +
+						"You see them face flat with a small pool of blood pouring down their nose. " +
+						"You do not give a second thought and return to the closet found in the barracks. \n\n" +
+						"Press I to inspect the lock!";
+		 if (Input.GetKeyDown(KeyCode.I)) {
 			myState = States.lock_5; 
 		}
 		}
 		
 		void state_lock_5 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You shuffle throught the keys to find a perfect match. " +
+						"Eventually you find the right match and unlock the door. \n\n" +
+						"Press O to open the Closet!";
+		 if (Input.GetKeyDown(KeyCode.O)) {
 			myState = States.closet_1; 
 		}
 		}
 		
 		void state_closet_1 () {
 			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
 						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -4677,20 +4617,20 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_uniform_0 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You put on the uniform over your prison outfit. " +
+						"It feels cozy, this is what your tax dollars pays. " +
+						"You move forward near the prison's entrance. \n\n" +
+						"Press M to move near the entrance!";
+		 if (Input.GetKeyDown(KeyCode.M)) {
 			myState = States.court_0; 
 		}
 		}
 		
 		void state_court_0 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
+			text.text = "You arrive at the courtyard near the entrance. " +
+						"You blend in with the other prison guards. Do not blow your cover! " +
+						"You can taste freedom on your fingertips. \n\n" +
+						"Press R to run to the gate or Press S to slowly make your way to the gate!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.gate_0; 
 		} else if (Input.GetKeyDown(KeyCode.R)) {
@@ -4699,31 +4639,31 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_gate_0 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You keep your cool and slowly make your way to the gate. " +
+						"One of the prison guards thinks you arrive to cover the night watch. " + 
+						"He leaves and you are alone at the front gate. \n\n" +
+						"Press E to escape the Prison!";
+		 if (Input.GetKeyDown(KeyCode.E)) {
 			myState = States.freedom; 
 		} 
 		}
 		
 		void state_game_over_2 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs . " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You lost your cool and decide to make a break for the front gate. " +
+						"The prison guards become suspicious and tackle you to stop you on your tracks. " + 
+						"They return you to your cell. You missed your chance to escape the Booty Warrior! \n\n" +
+						"GAME OVER! Press P to play again!";
+		 if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.cell; 
 		} 
 		}
 		
 		void state_freedom () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"The light creates a divide to separate the shadow surrounding the stairs. " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You check your surroundings to see other prison guards in the nightwatch. " +
+						"You prison guards seem to mind their own business, so you continue to walk forward with your hands on " +
+						"your hips to look assertive. You managed to get far enough for the guards not to notice. \n\n" +
+						"Congratulations you managed to escape the Booty Warrior! Press P to play again!";
+		 if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.cell; 
 		} 
 		}
