@@ -4662,7 +4662,7 @@ public class TextController : MonoBehaviour {
 			text.text = "You check your surroundings to see other prison guards in the nightwatch. " +
 						"You prison guards seem to mind their own business, so you continue to walk forward with your hands on " +
 						"your hips to look assertive. You managed to get far enough for the guards not to notice. \n\n" +
-						"Congratulations you managed to escape the Booty Warrior! Press P to play again!";
+						"Congratulations you managed to escape the Booty Warrior! Press P to play again! ";
 		 if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.cell; 
 		} 
