@@ -75,9 +75,9 @@ public class TextController : MonoBehaviour {
 							lock_4_item_3_1, lock_4_item_3_2, lock_4_item_3_4, 
 							lock_4_item_4_1, lock_4_item_4_2, lock_4_item_4_3,
 							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
-							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
-							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
-							lock_4_item_1_2_3, lock_4_item_1_3_2, lock_4_item_1_2_4, lock_4_item_1_4_2, lock_4_item_1_3_4, lock_4_item_1_4_3, 
+							lock_4_item_2_1_3, lock_4_item_2_1_4, lock_4_item_2_3_1, lock_4_item_2_3_4, lock_4_item_2_4_1, lock_4_item_2_4_3, 
+							lock_4_item_3_1_2, lock_4_item_3_1_4, lock_4_item_3_2_1, lock_4_item_3_2_4, lock_4_item_3_4_1, lock_4_item_3_4_2, 
+							lock_4_item_4_1_2, lock_4_item_4_1_3, lock_4_item_4_2_1, lock_4_item_4_2_3, lock_4_item_4_3_1, lock_4_item_4_3_2, 
 							use_item_3, 
 							custodian_0, 
 							custodian_0_item_4, 
@@ -88,7 +88,7 @@ public class TextController : MonoBehaviour {
 							custodian_0_item_3_1_4, custodian_0_item_3_4_1, custodian_0_item_3_2_4, custodian_0_item_3_4_2, 
 							custodian_0_item_4_1_2, custodian_0_item_4_2_1, custodian_0_item_4_1_3, custodian_0_item_4_3_1, custodian_0_item_4_2_3, custodian_0_item_4_3_2, 
 							use_item_4, keys_0, custodian_1, keys_1, game_over_1,  
-							closet_1, lock_5, uniform_0, court_0, gate_0, game_over_2, gate_1, freedom};
+							closet_1, lock_5, uniform_0, court_0, gate_0, game_over_2, freedom};
 	private States myState;
 
 	// Use this for initialization
@@ -653,6 +653,164 @@ public class TextController : MonoBehaviour {
 			state_closet_0_item_4_3_1();
 		} else if (myState == States.closet_0_item_4_3_2) {
 			state_closet_0_item_4_3_2();
+		} else if (myState == States.lock_4_item_1) {
+			state_lock_4_item_1();
+		} else if (myState == States.lock_4_item_2) {
+			state_lock_4_item_2();
+		} else if (myState == States.lock_4_item_3) {
+			state_lock_4_item_3();
+		} else if (myState == States.lock_4_item_4) {
+			state_lock_4_item_4();
+		} else if (myState == States.lock_4_item_1_2) {
+			state_lock_4_item_1_2();
+		} else if (myState == States.lock_4_item_1_3) {
+			state_lock_4_item_1_3();
+		} else if (myState == States.lock_4_item_1_4) {
+			state_lock_4_item_1_4();
+		} else if (myState == States.lock_4_item_2_1) {
+			state_lock_4_item_2_1();
+		} else if (myState == States.lock_4_item_2_3) {
+			state_lock_4_item_2_3();
+		} else if (myState == States.lock_4_item_2_4) {
+			state_lock_4_item_2_4();
+		} else if (myState == States.lock_4_item_3_1) {
+			state_lock_4_item_3_1();
+		} else if (myState == States.lock_4_item_3_2) {
+			state_lock_4_item_3_2();
+		} else if (myState == States.lock_4_item_3_4) {
+			state_lock_4_item_3_4();
+		} else if (myState == States.lock_4_item_4_1) {
+			state_lock_4_item_4_1();
+		} else if (myState == States.lock_4_item_4_2) {
+			state_lock_4_item_4_2();
+		} else if (myState == States.lock_4_item_4_3) {
+			state_lock_4_item_4_3();
+		} else if (myState == States.lock_4_item_1_2_3) {
+			state_lock_4_item_1_2_3();
+		} else if (myState == States.lock_4_item_1_2_4) {
+			state_lock_4_item_1_2_4();
+		} else if (myState == States.lock_4_item_1_3_2) {
+			state_lock_4_item_1_3_2();
+		} else if (myState == States.lock_4_item_1_3_4) {
+			state_lock_4_item_1_3_4();
+		} else if (myState == States.lock_4_item_1_4_2) {
+			state_lock_4_item_1_4_2();
+		} else if (myState == States.lock_4_item_1_4_3) {
+			state_lock_4_item_1_4_3();
+		} else if (myState == States.lock_4_item_2_1_3) {
+			state_lock_4_item_2_1_3();
+		} else if (myState == States.lock_4_item_2_1_4) {
+			state_lock_4_item_2_1_4();
+		} else if (myState == States.lock_4_item_2_3_1) {
+			state_lock_4_item_2_3_1();
+		} else if (myState == States.lock_4_item_2_3_4) {
+			state_lock_4_item_2_3_4();
+		} else if (myState == States.lock_4_item_2_4_1) {
+			state_lock_4_item_2_4_1();
+		} else if (myState == States.lock_4_item_2_4_3) {
+			state_lock_4_item_2_4_3();
+		} else if (myState == States.lock_4_item_3_1_2) {
+			state_lock_4_item_3_1_2();
+		} else if (myState == States.lock_4_item_3_1_4) {
+			state_lock_4_item_3_1_4();
+		} else if (myState == States.lock_4_item_3_2_1) {
+			state_lock_4_item_3_2_1();
+		} else if (myState == States.lock_4_item_3_2_4) {
+			state_lock_4_item_3_2_4();
+		} else if (myState == States.lock_4_item_3_4_1) {
+			state_lock_4_item_3_4_1();
+		} else if (myState == States.lock_4_item_3_4_2) {
+			state_lock_4_item_3_4_2();
+		} else if (myState == States.lock_4_item_4_1_2) {
+			state_lock_4_item_4_1_2();
+		} else if (myState == States.lock_4_item_4_1_3) {
+			state_lock_4_item_4_1_3();
+		} else if (myState == States.lock_4_item_4_2_1) {
+			state_lock_4_item_4_2_1();
+		} else if (myState == States.lock_4_item_4_2_3) {
+			state_lock_4_item_4_2_3();
+		} else if (myState == States.lock_4_item_4_3_1) {
+			state_lock_4_item_4_3_1();
+		} else if (myState == States.lock_4_item_4_3_2) {
+			state_lock_4_item_4_3_2();
+		} else if (myState == States.use_item_3) {
+			state_use_item_3();
+		} else if (myState == States.lock_4_item_4_1) {
+			state_lock_4_item_4_1();
+		} else if (myState == States.custodian_0) {
+			state_custodian_0();
+		} else if (myState == States.custodian_0_item_1_4) {
+			state_custodian_0_item_1_4();
+		} else if (myState == States.custodian_0_item_2_4) {
+			state_custodian_0_item_2_4();
+		} else if (myState == States.custodian_0_item_3_4) {
+			state_custodian_0_item_3_4();
+		} else if (myState == States.custodian_0_item_4_1) {
+			state_custodian_0_item_4_1();
+		} else if (myState == States.custodian_0_item_4_2) {
+			state_custodian_0_item_4_2();
+		} else if (myState == States.custodian_0_item_4_3) {
+			state_custodian_0_item_4_3();
+		} else if (myState == States.custodian_0_item_1_2_4) {
+			state_custodian_0_item_1_2_4();
+		} else if (myState == States.custodian_0_item_1_3_4) {
+			state_custodian_0_item_1_3_4();
+		} else if (myState == States.custodian_0_item_1_4_2) {
+			state_custodian_0_item_1_4_2();
+		} else if (myState == States.custodian_0_item_1_4_3) {
+			state_custodian_0_item_1_4_3();
+		} else if (myState == States.custodian_0_item_2_1_4) {
+			state_custodian_0_item_2_1_4();
+		} else if (myState == States.custodian_0_item_2_3_4) {
+			state_custodian_0_item_2_3_4();
+		} else if (myState == States.custodian_0_item_2_4_1) {
+			state_custodian_0_item_2_4_1();
+		} else if (myState == States.custodian_0_item_2_4_3) {
+			state_custodian_0_item_2_4_3();
+		} else if (myState == States.custodian_0_item_3_1_4) {
+			state_custodian_0_item_3_1_4();
+		} else if (myState == States.custodian_0_item_3_2_4) {
+			state_custodian_0_item_3_2_4();
+		} else if (myState == States.custodian_0_item_3_4_1) {
+			state_custodian_0_item_3_4_1();
+		} else if (myState == States.custodian_0_item_3_4_2) {
+			state_custodian_0_item_3_4_2();
+		} else if (myState == States.custodian_0_item_4_1_2) {
+			state_custodian_0_item_4_1_2();
+		} else if (myState == States.custodian_0_item_4_1_3) {
+			state_custodian_0_item_4_1_3();
+		} else if (myState == States.custodian_0_item_4_2_1) {
+			state_custodian_0_item_4_2_1();
+		} else if (myState == States.custodian_0_item_4_2_3) {
+			state_custodian_0_item_4_2_3();
+		} else if (myState == States.custodian_0_item_4_3_1) {
+			state_custodian_0_item_4_3_1();
+		} else if (myState == States.custodian_0_item_4_3_2) {
+			state_custodian_0_item_4_3_2();
+		} else if (myState == States.use_item_4) {
+			state_use_item_4();
+		} else if (myState == States.keys_0) {
+			state_keys_0();
+		} else if (myState == States.custodian_1) {
+			state_custodian_1();
+		} else if (myState == States.keys_1) {
+			state_keys_1();
+		} else if (myState == States.game_over_1) {
+			state_game_over_1();
+		} else if (myState == States.closet_1) {
+			state_closet_1();
+		} else if (myState == States.lock_5) {
+			state_lock_5();
+		} else if (myState == States.uniform_0) {
+			state_uniform_0();
+		} else if (myState == States.court_0) {
+			state_court_0();
+		} else if (myState == States.gate_0) {
+			state_gate_0();
+		} else if (myState == States.game_over_2) {
+			state_game_over_2();
+		} else if (myState == States.freedom) {
+			state_freedom();
 		}
 	}
 		
@@ -1882,7 +2040,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_1; 
@@ -1892,7 +2050,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_2; 
@@ -1922,7 +2080,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_1_2a; 
@@ -1934,7 +2092,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_1_3; 
@@ -1944,7 +2102,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_1_4; 
@@ -1954,7 +2112,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_2_1a; 
@@ -1966,7 +2124,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_2_3; 
@@ -1976,7 +2134,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_2_4; 
@@ -1986,7 +2144,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_3_1; 
@@ -1996,7 +2154,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_3_2; 
@@ -2016,7 +2174,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_4_1; 
@@ -2026,7 +2184,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_4_2; 
@@ -2046,7 +2204,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_2_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_1_2_3a; 
@@ -2058,7 +2216,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_2_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_1_2_4a; 
@@ -2070,7 +2228,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_3_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_1_3_2a; 
@@ -2082,7 +2240,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_3_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_1_3_4; 
@@ -2092,7 +2250,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_4_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_1_4_2a; 
@@ -2104,7 +2262,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_1_4_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_1_4_3; 
@@ -2114,7 +2272,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_1_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_2_1_3a; 
@@ -2126,7 +2284,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_1_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_2_1_4a; 
@@ -2138,7 +2296,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_3_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_2_3_1a; 
@@ -2150,7 +2308,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_3_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_2_3_4; 
@@ -2160,7 +2318,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_4_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_2_4_1a; 
@@ -2172,7 +2330,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_2_4_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_2_4_3; 
@@ -2182,7 +2340,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_1_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_3_1_2a; 
@@ -2194,7 +2352,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_1_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_3_1_4; 
@@ -2204,7 +2362,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_2_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_3_2_1a; 
@@ -2216,7 +2374,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_2_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear the shadows using the Flashlight. \n\n" +
+						"You are able to clear the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_3_2_4; 
@@ -2226,7 +2384,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_4_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_3_4_1; 
@@ -2236,7 +2394,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_4_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Flashlight at your disposal. " +
-						"You are able to clear the shadows using the Flashlight. \n\n" +
+						"You are able to clear the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_3_4_2; 
@@ -2246,7 +2404,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_1_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_4_1_2a; 
@@ -2258,7 +2416,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_1_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_4_1_3; 
@@ -2268,7 +2426,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_2_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter and Flashlight at your disposal. " +
-						"You are able to clear the shadows using a Lighter or a Flashlight. \n\n" +
+						"You are able to clear the shadow using a Lighter or a Flashlight. \n\n" +
 						"Press L to use the Lighter, or Press F to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.L)) {
 			myState = States.stairs_3_item_4_2_1a; 
@@ -2280,7 +2438,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_2_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_4_2_3; 
@@ -2290,7 +2448,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_3_1 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
+						"You are able to clear a portion of the shadow using the Lighter. \n\n" +
 						"Press U to use the Lighter!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_4_3_1; 
@@ -2300,7 +2458,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_3_2 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Flashlight. \n\n" +
+						"You are able to clear a portion of the shadow using the Flashlight. \n\n" +
 						"Press U to use the Flashlight!";
 		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.stairs_3_item_4_3_2; 
@@ -2308,545 +2466,2266 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1; 
 		}
 		}
 		
 		void state_stairs_3_item_2 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2; 
 		}
 		}
 		
 		void state_stairs_3_item_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You approached the stairs overwhelming with darkness, however, with a weapon on hand " +
+						"you feel confident you can continue downstairs. " +
+						"You grip on the handles to your left make continue your path. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3; 
 		}
 		}
 		
 		void state_stairs_3_item_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You approached the stairs overwhelming with darkness, however, with a weapon on hand " +
+						"you feel confident you can continue downstairs. " +
+						"You grip on the handles to your left make continue your path. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4; 
 		}
 		}
 		
 		void state_stairs_3_item_1_2a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_2; 
 		}
 		}
 		
 		void state_stairs_3_item_1_2b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_2; 
 		}
 		}
 		
 		void state_stairs_3_item_1_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_3; 
 		}
 		}
 		
 		void state_stairs_3_item_1_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_4; 
 		}
 		}
 		
 		void state_stairs_3_item_2_1a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_1; 
 		}
 		}
 		
 		void state_stairs_3_item_2_1b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_1; 
 		}
 		}
 		
 		void state_stairs_3_item_2_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_3; 
 		}
 		}
 		
 		void state_stairs_3_item_2_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_4; 
 		}
 		}
 		
 		void state_stairs_3_item_3_1 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_1; 
 		}
 		}
 		
 		void state_stairs_3_item_3_2 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_2; 
 		}
 		}
 		
 		void state_stairs_3_item_3_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You approached the stairs overwhelming with darkness, however, with a weapon on hand " +
+						"you feel confident you can continue downstairs. " +
+						"You grip on the handles to your left make continue your path. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_4; 
 		}
 		}
 		
 		void state_stairs_3_item_4_1 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_1; 
 		}
 		}
 		
 		void state_stairs_3_item_4_2 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_2; 
 		}
 		}
 		
 		void state_stairs_3_item_4_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You approached the stairs overwhelming with darkness, however, with a weapon on hand " +
+						"you feel confident you can continue downstairs. " +
+						"You grip on the handles to your left make continue your path. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_3; 
 		}
 		}
 		
 		void state_stairs_3_item_1_2_3a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_2_3; 
 		}
 		}
 		
 		void state_stairs_3_item_1_2_3b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_2_3; 
 		}
 		}
 		
 		void state_stairs_3_item_1_2_4a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_2_4; 
 		}
 		}
 		
 		void state_stairs_3_item_1_2_4b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_2_4; 
 		}
 		}
 		
 		void state_stairs_3_item_1_3_2a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_3_2; 
 		}
 		}
 		
 		void state_stairs_3_item_1_3_2b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_3_2; 
 		}
 		}
 		
 		void state_stairs_3_item_1_3_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_3_4; 
 		}
 		}
 		
 		void state_stairs_3_item_1_4_2a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_4_2; 
 		}
 		}
 		
 		void state_stairs_3_item_1_4_2b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_4_2; 
 		}
 		}
 		
 		void state_stairs_3_item_1_4_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_1_4_3; 
 		}
 		}
 		
 		void state_stairs_3_item_2_1_3a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_1_3; 
 		}
 		}
 		
 		void state_stairs_3_item_2_1_3b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_1_3; 
 		}
 		}
 		
 		void state_stairs_3_item_2_1_4a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_1_4; 
 		}
 		}
 		
 		void state_stairs_3_item_2_1_4b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_1_4; 
 		}
 		}
 		
 		void state_stairs_3_item_2_3_1a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_3_1; 
 		}
 		}
 		
 		void state_stairs_3_item_2_3_1b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_3_1; 
 		}
 		}
 		
 		void state_stairs_3_item_2_3_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_3_4; 
 		}
 		}
 		
 		void state_stairs_3_item_2_4_1a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_4_1; 
 		}
 		}
 		
 		void state_stairs_3_item_2_4_1b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_4_1; 
 		}
 		}
 		
 		void state_stairs_3_item_2_4_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_2_4_3; 
 		}
 		}
 		
 		void state_stairs_3_item_3_1_2a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_1_2; 
 		}
 		}
 		
 		void state_stairs_3_item_3_1_2b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_1_2; 
 		}
 		}
 		
 		void state_stairs_3_item_3_1_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_1_4; 
 		}
 		}
 		
 		void state_stairs_3_item_3_2_1a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_2_1; 
 		}
 		}
 		
 		void state_stairs_3_item_3_2_1b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_2_1; 
 		}
 		}
 		
 		void state_stairs_3_item_3_2_4 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_2_4; 
 		}
 		}
 		
 		void state_stairs_3_item_3_4_1 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_4_1; 
 		}
 		}
 		
 		void state_stairs_3_item_3_4_2 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_3_4_2; 
 		}
 		}
 		
 		void state_stairs_3_item_4_1_2a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_1_2; 
 		}
 		}
 		
 		void state_stairs_3_item_4_1_2b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_1_2; 
 		}
 		}
 		
 		void state_stairs_3_item_4_1_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_1_3; 
 		}
 		}
 		
 		void state_stairs_3_item_4_2_1a () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";;
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_2_1; 
 		}
 		}
 		
 		void state_stairs_3_item_4_2_1b () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_2_1; 
 		}
 		}
 		
 		void state_stairs_3_item_4_2_3 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_2_3; 
 		}
 		}
 		
 		void state_stairs_3_item_4_3_1 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "The sparks from the Lighter ignite a small flame. " +
+						"You feel the heat radiate on your fingetips. " +
+						"You are able to see a small radius of leading downstairs. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_3_1; 
 		}
 		}
 		
 		void state_stairs_3_item_4_3_2 () {
-			text.text = "You approached the stairs overwhelming with darkness. " +
-						"You have a fully functional Lighter at your disposal. " +
-						"You are able to clear a portion of the shadows using the Lighter. \n\n" +
-						"Press U to use the Lighter!";
-		 if (Input.GetKeyDown(KeyCode.U)) {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.barracks_0_item_4_3_2; 
 		}
 		}
 		
+		void state_barracks_0_item_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1; 
+		}
+		}
 		
+		void state_barracks_0_item_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2; 
+		}
+		}
+		
+		void state_barracks_0_item_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3; 
+		}
+		}
+		
+		void state_barracks_0_item_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4; 
+		}
+		}
+		
+		void state_barracks_0_item_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_2; 
+		}
+		}
+		
+		void state_barracks_0_item_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_3; 
+		}
+		}
+		
+		void state_barracks_0_item_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_4; 
+		}
+		}
+		
+		void state_barracks_0_item_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_1; 
+		}
+		}
+		
+		void state_barracks_0_item_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_3; 
+		}
+		}
+		
+		void state_barracks_0_item_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_4; 
+		}
+		}
+		
+		void state_barracks_0_item_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_1; 
+		}
+		}
+		
+		void state_barracks_0_item_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_2; 
+		}
+		}
+		
+		void state_barracks_0_item_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_4; 
+		}
+		}
+		
+		void state_barracks_0_item_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_1; 
+		}
+		}
+		
+		void state_barracks_0_item_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_2; 
+		}
+		}
+		
+		void state_barracks_0_item_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_3; 
+		}
+		}
+		
+		void state_barracks_0_item_1_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_2_3; 
+		}
+		}
+		
+		void state_barracks_0_item_1_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_2_4; 
+		}
+		}
+		
+		void state_barracks_0_item_1_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_3_2; 
+		}
+		}
+		
+		void state_barracks_0_item_1_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_3_4; 
+		}
+		}
+		
+		void state_barracks_0_item_1_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_4_2; 
+		}
+		}
+		
+		void state_barracks_0_item_1_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_1_2_3; 
+		}
+		}
+		
+		void state_barracks_0_item_2_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_1_3; 
+		}
+		}
+		
+		void state_barracks_0_item_2_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_1_4; 
+		}
+		}
+		
+		void state_barracks_0_item_2_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_3_1; 
+		}
+		}
+		
+		void state_barracks_0_item_2_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_3_4; 
+		}
+		}
+		
+		void state_barracks_0_item_2_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_4_1; 
+		}
+		}
+		
+		void state_barracks_0_item_2_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_2_4_3; 
+		}
+		}
+		
+		void state_barracks_0_item_3_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_1_2; 
+		}
+		}
+		
+		void state_barracks_0_item_3_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_1_4; 
+		}
+		}
+		
+		void state_barracks_0_item_3_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_2_1; 
+		}
+		}
+		
+		void state_barracks_0_item_3_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_2_4; 
+		}
+		}
+		
+		void state_barracks_0_item_3_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_4_1; 
+		}
+		}
+		
+		void state_barracks_0_item_3_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_3_4_2; 
+		}
+		}
+		
+		void state_barracks_0_item_4_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_1_2; 
+		}
+		}
+		
+		void state_barracks_0_item_4_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_1_3; 
+		}
+		}
+		
+		void state_barracks_0_item_4_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_2_1; 
+		}
+		}
+		
+		void state_barracks_0_item_4_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_2_3; 
+		}
+		}
+		
+		void state_barracks_0_item_4_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_3_1; 
+		}
+		}
+		
+		void state_barracks_0_item_4_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_0_item_4_3_2; 
+		}
+		}
+		
+		void state_closet_0_item_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1; 
+		}
+		}
+		
+		void state_closet_0_item_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2; 
+		}
+		}
+		
+		void state_closet_0_item_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3; 
+		}
+		}
+		
+		void state_closet_0_item_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4; 
+		}
+		}
+		
+		void state_closet_0_item_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_2; 
+		}
+		}
+		
+		void state_closet_0_item_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_3; 
+		}
+		}
+		
+		void state_closet_0_item_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_4; 
+		}
+		}
+		
+		void state_closet_0_item_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_1; 
+		}
+		}
+		
+		void state_closet_0_item_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_3; 
+		}
+		}
+		
+		void state_closet_0_item_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_4; 
+		}
+		}
+		
+		void state_closet_0_item_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_1; 
+		}
+		}
+		
+		void state_closet_0_item_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_2; 
+		}
+		}
+		
+		void state_closet_0_item_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_4; 
+		}
+		}
+		
+		void state_closet_0_item_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_1; 
+		}
+		}
+		
+		void state_closet_0_item_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_2; 
+		}
+		}
+		
+		void state_closet_0_item_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_3; 
+		}
+		}
+		
+		void state_closet_0_item_1_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_2_3; 
+		}
+		}
+		
+		void state_closet_0_item_1_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_2_4; 
+		}
+		}
+		
+		void state_closet_0_item_1_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_3_2; 
+		}
+		}
+		
+		void state_closet_0_item_1_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_3_4; 
+		}
+		}
+		
+		void state_closet_0_item_1_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_2_3; 
+		}
+		}
+		
+		void state_closet_0_item_1_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_1_4_3; 
+		}
+		}
+		
+		void state_closet_0_item_2_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_1_3; 
+		}
+		}
+		
+		void state_closet_0_item_2_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_1_4; 
+		}
+		}
+		
+		void state_closet_0_item_2_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_3_1; 
+		}
+		}
+		
+		void state_closet_0_item_2_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_3_4; 
+		}
+		}
+		
+		void state_closet_0_item_2_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_4_1; 
+		}
+		}
+		
+		void state_closet_0_item_2_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_2_4_3; 
+		}
+		}
+		
+		void state_closet_0_item_3_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_1_2; 
+		}
+		}
+		
+		void state_closet_0_item_3_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_1_4; 
+		}
+		}
+		
+		void state_closet_0_item_3_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_2_1; 
+		}
+		}
+		
+		void state_closet_0_item_3_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_2_4; 
+		}
+		}
+		
+		void state_closet_0_item_3_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_4_1; 
+		}
+		}
+		
+		void state_closet_0_item_3_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_3_4_2; 
+		}
+		}
+		
+		void state_closet_0_item_4_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_1_2; 
+		}
+		}
+		
+		void state_closet_0_item_4_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_1_3; 
+		}
+		}
+		
+		void state_closet_0_item_4_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_2_1; 
+		}
+		}
+		
+		void state_closet_0_item_4_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_2_3; 
+		}
+		}
+		
+		void state_closet_0_item_4_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_3_1; 
+		}
+		}
+		
+		void state_closet_0_item_4_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_4_item_4_3_2; 
+		}
+		}
+		
+		void state_lock_4_item_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0; 
+		}
+		}
+		
+		void state_lock_4_item_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0; 
+		}
+		}
+		
+		void state_lock_4_item_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_4; 
+		}
+		}
+		
+		void state_lock_4_item_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0; 
+		}
+		}
+		
+		void state_lock_4_item_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_1_4; 
+		}
+		}
+		
+		void state_lock_4_item_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0; 
+		}
+		}
+		
+		void state_lock_4_item_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_2_4; 
+		}
+		}
+		
+		void state_lock_4_item_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_3_4; 
+		}
+		}
+		
+		void state_lock_4_item_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_4_1; 
+		}
+		}
+		
+		void state_lock_4_item_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_4_2; 
+		}
+		}
+		
+		void state_lock_4_item_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_4_3; 
+		}
+		}
+		
+		void state_lock_4_item_1_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_1_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_1_2_4; 
+		}
+		}
+		
+		void state_lock_4_item_1_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_1_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_1_3_4; 
+		}
+		}
+		
+		void state_lock_4_item_1_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_1_4_2; 
+		}
+		}
+		
+		void state_lock_4_item_1_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_1_4_3; 
+		}
+		}
+		
+		void state_lock_4_item_2_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_2_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_2_1_4; 
+		}
+		}
+		
+		void state_lock_4_item_2_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_2_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_2_3_4; 
+		}
+		}
+		
+		void state_lock_4_item_2_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_2_4_1; 
+		}
+		}
+		
+		void state_lock_4_item_2_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_2_4_3; 
+		}
+		}
+		
+		void state_lock_4_item_3_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_3_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_3_1_4; 
+		}
+		}
+		
+		void state_lock_4_item_3_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		}
+		}
+		
+		void state_lock_4_item_3_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_3_2_4; 
+		}
+		}
+		
+		void state_lock_4_item_3_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_3_4_1; 
+		}
+		}
+		
+		void state_lock_4_item_3_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_3_4_2; 
+		}
+		}
+		
+		void state_lock_4_item_4_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_4_1_2; 
+		}
+		}
+		
+		void state_lock_4_item_4_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_4_1_3; 
+		}
+		}
+		
+		void state_lock_4_item_4_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_0_item_4_2_1; 
+		}
+		}
+		
+		void state_lock_4_item_4_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_4_2_3; 
+		}
+		}
+		
+		void state_lock_4_item_4_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_4_3_1; 
+		}
+		}
+		
+		void state_lock_4_item_4_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_3; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_0_item_4_3_2; 
+		}
+		}
+		
+		void state_use_item_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_1; 
+		}
+		}
+		
+		
+		void state_custodian_0 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_1_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_1_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_1_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_1_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_2_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_2_3_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_2_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_2_4_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_3_1_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_3_2_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_3_4_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_3_4_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_1_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_1_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_2_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_2_3 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_3_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_custodian_0_item_4_3_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.use_item_4; 
+		} else if (Input.GetKeyDown(KeyCode.C)) {
+			myState = States.custodian_1; 
+		} else if (Input.GetKeyDown(KeyCode.L)) {
+			myState = States.game_over_1; 
+		}
+		}
+		
+		void state_use_item_4 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.keys_0; 
+		}
+		}
+		
+		void state_custodian_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.keys_1; 
+		}
+		}
+		
+		void state_game_over_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.cell; 
+		}
+		}
+		
+		void state_keys_0 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_5; 
+		}
+		}
+		
+		void state_keys_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.lock_5; 
+		}
+		}
+		
+		void state_lock_5 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.closet_1; 
+		}
+		}
+		
+		void state_closet_1 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.uniform_0; 
+		}
+		}
+		
+		void state_uniform_0 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.court_0; 
+		}
+		}
+		
+		void state_court_0 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.gate_0; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.game_over_2; 
+		}
+		}
+		
+		void state_gate_0 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.freedom; 
+		} 
+		}
+		
+		void state_game_over_2 () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs . " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.cell; 
+		} 
+		}
+		
+		void state_freedom () {
+			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
+						"The light creates a divide to separate the shadow surrounding the stairs. " +
+						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
+						"Press S to continue down the Stairs!";
+		 if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.cell; 
+		} 
+		}
 		
 }
