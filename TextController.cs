@@ -1136,7 +1136,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_selection_0 () {
-			text.text = "You successfully picked the lock. Those years of playing Fallout paid off, Clutch! " +
+			text.text = "You successfully picked the lock. Those years of exploring the wastelands paid off, Clutch! " +
 						"Once you open the storage you were able to find 4 items. Inspections must have been " +
 						"slow this week. In front of you are a lighter, a flaslight, a screwdriver, and " +
 						"a pair of golden brass knuckles. You began strategically choosing each item. \n\n" +
