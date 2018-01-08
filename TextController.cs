@@ -10,12 +10,17 @@ public class TextController : MonoBehaviour {
 	private enum States { title_screen, cell, cell_return, mirror, sheets_0, lock_0, cell_mirror, sheets_1, lock_1, 
 							corridor_0, stairs_0, showers_0, bobby_pins, corridor_return, corridor_1, stairs_1, storage_0, lock_2, 
 							storage_1, lock_3, selection_0, item_1, item_2, item_3, item_4, 
-							selection_1_item_1, selection_1_item_2, selection_1_item_3, selection_1_item_4, 
+							selection_1_item_1, selection_1_item_2, selection_1_item_3, selection_1_item_4,
+							shank_or_run_item_3, 
+							punch_or_run_item_4, 
+							game_over_3, game_over_4, 
 							corridor_2_item_1, corridor_2_item_2, corridor_2_item_3, corridor_2_item_4, 
 							selection_2_item_1_2, selection_2_item_1_3, selection_2_item_1_4, 
 							selection_2_item_2_1, selection_2_item_2_3, selection_2_item_2_4, 
 							selection_2_item_3_1, selection_2_item_3_2, selection_2_item_3_4, 
 							selection_2_item_4_1, selection_2_item_4_2, selection_2_item_4_3, 
+							shank_or_run_item_1_3, shank_or_run_item_2_3, shank_punch_or_run_item_4_3, shank_or_run_item_3_1, shank_or_run_item_3_2, shank_punch_or_run_item_3_4, 
+							punch_or_run_item_1_4, punch_or_run_item_2_4, punch_or_run_item_4_1, punch_or_run_item_4_2, 
 							corridor_2_item_1_2, corridor_2_item_1_3, corridor_2_item_1_4, 
 							corridor_2_item_2_1, corridor_2_item_2_3, corridor_2_item_2_4, 
 							corridor_2_item_3_1, corridor_2_item_3_2, corridor_2_item_3_4, 
@@ -24,6 +29,13 @@ public class TextController : MonoBehaviour {
 							selection_3_item_2_1_3, selection_3_item_2_3_1, selection_3_item_2_1_4, selection_3_item_2_4_1, selection_3_item_2_3_4, selection_3_item_2_4_3, 
 							selection_3_item_3_1_2, selection_3_item_3_2_1, selection_3_item_3_1_4, selection_3_item_3_4_1, selection_3_item_3_2_4, selection_3_item_3_4_2, 
 							selection_3_item_4_1_2, selection_3_item_4_2_1, selection_3_item_4_1_3, selection_3_item_4_3_1, selection_3_item_4_2_3, selection_3_item_4_3_2, 
+							shank_or_run_item_1_2_3, shank_or_run_item_1_3_2, shank_punch_or_run_item_1_3_4, shank_punch_or_run_item_1_4_3, 
+							shank_or_run_item_2_1_3, shank_or_run_item_2_3_1, shank_punch_or_run_item_2_3_4, shank_punch_or_run_item_2_4_3, 
+							shank_or_run_item_3_1_2, shank_punch_or_run_item_3_1_4, shank_or_run_item_3_2_1, shank_punch_or_run_item_3_2_4, shank_punch_or_run_item_3_4_1, shank_punch_or_run_item_3_4_2, 
+							shank_punch_or_run_item_4_1_3, shank_punch_or_run_item_4_3_1, shank_punch_or_run_item_4_2_3, shank_punch_or_run_item_4_3_2, 
+							punch_or_run_item_1_2_4, punch_or_run_item_1_4_2, 
+							punch_or_run_item_2_1_4, punch_or_run_item_2_4_1, 
+							punch_or_run_item_4_1_2, punch_or_run_item_4_2_1, 
 							corridor_2_item_1_2_3, corridor_2_item_1_3_2, corridor_2_item_1_2_4, corridor_2_item_1_4_2, corridor_2_item_1_3_4, corridor_2_item_1_4_3,  
 							corridor_2_item_2_1_3, corridor_2_item_2_3_1, corridor_2_item_2_1_4, corridor_2_item_2_4_1, corridor_2_item_2_3_4, corridor_2_item_2_4_3, 
 							corridor_2_item_3_1_2, corridor_2_item_3_2_1, corridor_2_item_3_1_4, corridor_2_item_3_4_1, corridor_2_item_3_2_4, corridor_2_item_3_4_2, 
@@ -143,6 +155,10 @@ public class TextController : MonoBehaviour {
 			state_lock_3();
 		} else if (myState == States.selection_0) {
 			state_selection_0();
+		} else if (myState == States.shank_or_run_item_3) {
+			state_shank_or_run_item_3();
+		} else if (myState == States.punch_or_run_item_4) {
+			state_punch_or_run_item_4();
 		} else if (myState == States.selection_1_item_1) {
 			state_selection_1_item_1();
 		} else if (myState == States.selection_1_item_2) {
@@ -175,6 +191,26 @@ public class TextController : MonoBehaviour {
 			state_selection_2_item_4_2();
 		} else if (myState == States.selection_2_item_4_3) {
 			state_selection_2_item_4_3();
+		} else if (myState == States.shank_or_run_item_1_3) {
+			state_shank_or_run_item_1_3();
+		} else if (myState == States.shank_or_run_item_2_3) {
+			state_shank_or_run_item_2_3();
+		} else if (myState == States.shank_punch_or_run_item_4_3) {
+			state_shank_punch_or_run_item_4_3();
+		} else if (myState == States.shank_or_run_item_3_1) {
+			state_shank_or_run_item_3_1();
+		} else if (myState == States.shank_or_run_item_3_2) {
+			state_shank_or_run_item_3_2();
+		} else if (myState == States.shank_punch_or_run_item_3_4) {
+			state_shank_punch_or_run_item_3_4();
+		} else if (myState == States.punch_or_run_item_1_4) {
+			state_punch_or_run_item_1_4();
+		} else if (myState == States.punch_or_run_item_2_4) {
+			state_punch_or_run_item_2_4();
+		} else if (myState == States.punch_or_run_item_4_1) {
+			state_punch_or_run_item_4_1();
+		} else if (myState == States.punch_or_run_item_4_2) {
+			state_punch_or_run_item_4_2();
 		} else if (myState == States.selection_3_item_1_2_3) {
 			state_selection_3_item_1_2_3();
 		} else if (myState == States.selection_3_item_1_2_4) {
@@ -223,8 +259,60 @@ public class TextController : MonoBehaviour {
 			state_selection_3_item_4_3_1();
 		} else if (myState == States.selection_3_item_4_3_2) {
 			state_selection_3_item_4_3_2();
+		} else if (myState == States.shank_or_run_item_1_2_3) {
+			state_shank_or_run_item_1_2_3();
+		} else if (myState == States.shank_or_run_item_1_3_2) {
+			state_shank_or_run_item_1_3_2();
+		} else if (myState == States.shank_punch_or_run_item_1_3_4) {
+			state_shank_punch_or_run_item_1_3_4();
+		} else if (myState == States.shank_punch_or_run_item_1_4_3) {
+			state_shank_punch_or_run_item_1_4_3();
+		} else if (myState == States.shank_or_run_item_2_1_3) {
+			state_shank_or_run_item_2_1_3();
+		} else if (myState == States.shank_or_run_item_2_3_1) {
+			state_shank_or_run_item_2_3_1();
+		} else if (myState == States.shank_punch_or_run_item_2_3_4) {
+			state_shank_punch_or_run_item_2_3_4();
+		} else if (myState == States.shank_punch_or_run_item_2_4_3) {
+			state_shank_punch_or_run_item_2_4_3();
+		} else if (myState == States.shank_or_run_item_3_1_2) {
+			state_shank_or_run_item_3_1_2();
+		} else if (myState == States.shank_punch_or_run_item_3_1_4) {
+			state_shank_punch_or_run_item_3_1_4();
+		} else if (myState == States.shank_or_run_item_3_2_1) {
+			state_shank_or_run_item_3_2_1();
+		} else if (myState == States.shank_punch_or_run_item_3_2_4) {
+			state_shank_punch_or_run_item_3_2_4();
+		} else if (myState == States.shank_punch_or_run_item_3_4_1) {
+			state_shank_punch_or_run_item_3_4_1();
+		} else if (myState == States.shank_punch_or_run_item_3_4_2) {
+			state_shank_punch_or_run_item_3_4_2();
+		} else if (myState == States.shank_punch_or_run_item_4_1_3) {
+			state_shank_punch_or_run_item_4_1_3();
+		} else if (myState == States.shank_punch_or_run_item_4_3_1) {
+			state_shank_punch_or_run_item_4_3_1();
+		} else if (myState == States.shank_punch_or_run_item_4_2_3) {
+			state_shank_punch_or_run_item_4_2_3();
+		} else if (myState == States.shank_punch_or_run_item_4_3_2) {
+			state_shank_punch_or_run_item_4_3_2();
+		} else if (myState == States.punch_or_run_item_1_2_4) {
+			state_punch_or_run_item_1_2_4();
+		} else if (myState == States.punch_or_run_item_1_4_2) {
+			state_punch_or_run_item_1_4_2();
+		} else if (myState == States.punch_or_run_item_2_1_4) {
+			state_punch_or_run_item_2_1_4();
+		} else if (myState == States.punch_or_run_item_2_4_1) {
+			state_punch_or_run_item_2_4_1();
+		} else if (myState == States.punch_or_run_item_4_1_2) {
+			state_punch_or_run_item_4_1_2();
+		} else if (myState == States.punch_or_run_item_4_2_1) {
+			state_punch_or_run_item_4_2_1();
 		} else if (myState == States.game_over_0) {
 			state_game_over_0();
+		} else if (myState == States.game_over_3) {
+			state_game_over_3();
+		} else if (myState == States.game_over_4) {
+			state_game_over_4();
 		} else if (myState == States.corridor_2_item_1) {
 			state_corridor_2_item_1();
 		} else if (myState == States.corridor_2_item_2) {
@@ -876,7 +964,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_mirror () {
 			text.text = "The mirror is small, but it is wide enough to fit through the cells. " +
-						"This can be useful for exploring corners and checking your rear. \n\n" +
+						"This can be useful for exploring corners and checking your rear (in case the Booty Warrior shows up). \n\n" +
 						"Press T to take mirror!";
 			if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.cell_mirror;
@@ -895,7 +983,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_sheets_1 () {
-			text.text = "What are you doing looking at your bed sheets? " +
+			text.text = "What are you doing looking at your sheets? " +
 						"Now is not the right time to rub one off. You got to escape now! \n\n" +
 						"Press L to view Lock!";
 		if (Input.GetKeyDown(KeyCode.L)) {
@@ -905,8 +993,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_lock_1 () {
 			text.text = "You use the mirror to inspect the lock from the outside where there is more light. " +
-						"Your eyes open wide when you found a loose bolt on the lock. " +
-						"You can try to bust open the lock by shaking cell. \n\n" +
+						"Your eyes open wide when you found a loose bolt on the lock, how convenient? " +
+						"You can try to bust open the lock by shaking the cell. \n\n" +
 						"Press S to shake your cell!";
 		if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.corridor_0;
@@ -915,8 +1003,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_0 () {
 			text.text = "You bust the lock open and quickly make your way to the corridor. " +
-						"You still have your mirror on hand to check for corners as you rush on your tip toes. " +
-						"You successfully made it to the corridor and find yourself in a division. You see stairs " +
+						"How did no one hear that? " +
+						"You successfully made it to the corridor and find yourself in a fork. You see stairs " +
 						"engulfed in darkness, an open door to the showers, and a door leading to the storage. \n\n" +
 						"Press D to view Stairs, Press S to go to Showers and C to view Storage";
 		if (Input.GetKeyDown(KeyCode.D)) {
@@ -929,8 +1017,8 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_0 () {
-			text.text = "You inspect the stairs, the overwhelmingly darkness makes you feel afraid to go any further. " +
-						"There is not enough natural light to reflect off the mirror to use downstairs. You decide " +
+			text.text = "You inspect the stairs, the overwhelmingly darkness makes you feel afraid to go any further, even though you're able to " +
+						"keep cool in front of a sex offender? There is not enough natural light to reflect off the mirror to use downstairs. You decide " +
 						"to turn back to the corridor to see if you can find a weapon or source of light \n\n" +
 						"Press R to return to the corridor!";
 			if (Input.GetKeyDown(KeyCode.R)) {
@@ -940,7 +1028,6 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_return () {
 			text.text = "You return back to the corridor frantically thinking for a way out. " +
-						"You remain in the division you were leading to the stairs, showers, or storage. " +
 						"You have to act quickly before the guards find out left your cell. \n\n" +
 						"Press D to view Stairs, Press S to go to Showers and C to view Storage";
 		if (Input.GetKeyDown(KeyCode.D)) {
@@ -976,9 +1063,8 @@ public class TextController : MonoBehaviour {
 			text.text = "You sneak pass the door entering the showers. " +
 						"This is where the Booty Warrior and other inmates hunt for their next prey. " +
 						"You were at least lucky that he caught you with your clothes on. " +
-						"You search for every corner of the shower for something useful. " +
-						"Less than a minute after your thorough search you found left over bobby pins on the floor. " +
-						"You figured they will come in handy for your escape so you decided to take them. \n\n" +
+						"After a thorough search pass the pile of bar soaps, you found left over bobby pins on the floor. " +
+						"They must belong to Jared! You decide to pick them up. \n\n" +
 						"Press T to take to the bobby pins!";
 			if (Input.GetKeyDown(KeyCode.T)) {
 			myState = States.bobby_pins;
@@ -996,7 +1082,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_corridor_1 () {
-			text.text = "You return back to the corridor feeling confident you're thinking in the right direction. " +
+			text.text = "You return back to the corridor confident that you're thinking in the right direction. " +
 						"You are still figuring out the missing piece of the puzzle as you stare down each path. " +
 						"You cannot stall for any longer, you have to act quick! \n\n" +
 						"Press D to view Stairs, Press S to go to Showers and C to view Storage";
@@ -1010,8 +1096,8 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_1 () {
-			text.text = "You inspect the stairs, the overwhelmingly darkness makes you feel afraid to go any further. " +
-						"There is not enough natural light to reflect off the mirror to use downstairs. You decide " +
+			text.text = "You inspect the stairs, the overwhelmingly darkness makes you feel afraid to go any further, even though you're able " +
+						"to keep cool in front of a sex offender? There is not enough natural light to reflect off the mirror to use downstairs. You decide " +
 						"to turn back to the corridor to see if you can find a weapon or source of light \n\n" +
 						"Press R to return to the corridor!";
 			if (Input.GetKeyDown(KeyCode.R)) {
@@ -1020,7 +1106,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_showers_1 () {
-			text.text = "What are you doing? Do you want to become someone's late night snack? " +
+			text.text = "What are you doing? Do you want to become someone's bottom bitch? " +
 						"Turn around now! " +
 						"Now is not the time to give up! \n\n" +
 						"Press R to return to the corridor!";
@@ -1041,8 +1127,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_lock_3 () {
 			text.text = "You inspect the lock and find there are no loose bolts, " +
-						"however, you insert one of the bobby pins you found in the shower and " +
-						"discover that it's a perfect fit. You are then able to lock pick the door. \n\n" +
+						"however, you insert one of your bobby pins and " +
+						"discover that it's a perfect fit. You are then able to lockpick the door. \n\n" +
 						"Press P to return to pick the lock!";
 			if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.selection_0;
@@ -1050,7 +1136,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_selection_0 () {
-			text.text = "You successfully picked the lock. Clutch! " +
+			text.text = "You successfully picked the lock. Those years of playing Fallout paid off, Clutch! " +
 						"Once you open the storage you were able to find 4 items. Inspections must have been " +
 						"slow this week. In front of you are a lighter, a flaslight, a screwdriver, and " +
 						"a pair of golden brass knuckles. You began strategically choosing each item. \n\n" +
@@ -1114,7 +1200,7 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.selection_2_item_3_4; 
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3; 
+			myState = States.shank_or_run_item_3; 
 		}
 		}
 		
@@ -1131,12 +1217,12 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.selection_2_item_4_3; 
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4; 
+			myState = States.punch_or_run_item_4; 
 		}
 		}
 		
 		void state_selection_2_item_1_2 () {
-			text.text = "You choose to pick up the Flashlight! " +
+			text.text = "You choose to pick up the Flashlight, wise choice! " +
 						"You hear soft footsteps down the hall. You check your mirror to see no one is around the corner. " +
 						"However, it is too dark to see pass 20 ft. You are confident you can grab another item. \n\n" +
 						"Press 3 to grab the Screwdriver, Press 4 to grab the Brass knuckles, " +
@@ -1161,7 +1247,7 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.selection_3_item_1_3_4;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_3; 
+			myState = States.shank_or_run_item_1_3; 
 		}
 		}
 		
@@ -1176,7 +1262,7 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.selection_3_item_1_4_3;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_4; 
+			myState = States.punch_or_run_item_1_4; 
 		}
 		}
 		
@@ -1196,7 +1282,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_selection_2_item_2_3 () {
-			text.text = "You choose to pick up the Screwdriver. You prefer a tactical style! " +
+			text.text = "You choose to pick up the Screwdriver. You prefer a tactical style, someone played Modern Warfare! " +
 						"You hear soft footsteps down the hall. You check your mirror to see no one is around the corner. " +
 						"However, it is too dark to see pass 20 ft. You are confident you can grab another item. \n\n" +
 						"Press 1 to grab the Lighter, Press 4 to grab the Brass knuckles, " +
@@ -1206,12 +1292,12 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.selection_3_item_2_3_4;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_3; 
+			myState = States.shank_or_run_item_2_3; 
 		}
 		}
 		
 		void state_selection_2_item_2_4 () {
-			text.text = "You choose to pick up the Brass knuckles, you plan to catch your opponent off guard! " +
+			text.text = "You choose to pick up the Brass knuckles, you can catch your opponent off guard! " +
 						"You hear soft footsteps down the hall. You check your mirror to see no one is around the corner. " +
 						"However, it is too dark to see pass 20 ft. You are confident you can grab another item. \n\n" +
 						"Press 1 to grab the Lighter, Press 3 to grab the Screwdriver, " +
@@ -1221,7 +1307,7 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.selection_3_item_2_4_3;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_4; 
+			myState = States.punch_or_run_item_2_4; 
 		}
 		}
 		
@@ -1236,12 +1322,12 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.selection_3_item_3_1_4;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_1; 
+			myState = States.shank_or_run_item_3_1; 
 		}
 		}
 		
 		void state_selection_2_item_3_2 () {
-			text.text = "You choose to pick up the Flaslight! " +
+			text.text = "You choose to pick up the Flaslight! You prefer a tactical style, someone played Modern Warfare! " +
 						"You hear soft footsteps down the hall. You check your mirror to see no one is around the corner. " +
 						"However, it is too dark to see pass 20 ft. You are confident you can grab another item. \n\n" +
 						"Press 1 to grab the Lighter, Press 4 to grab the Brass knuckles, " +
@@ -1251,7 +1337,7 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.selection_3_item_3_2_4;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_2; 
+			myState = States.shank_or_run_item_3_2; 
 		}
 		}
 		
@@ -1266,7 +1352,7 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.selection_3_item_3_4_2;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_4; 
+			myState = States.shank_punch_or_run_item_3_4; 
 		}
 		}
 		
@@ -1281,12 +1367,12 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.selection_3_item_4_1_3;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_1; 
+			myState = States.punch_or_run_item_4_1; 
 		}
 		}
 		
 		void state_selection_2_item_4_2 () {
-			text.text = "You choose to pick up the Flashlight, better to dodge a fight! " +
+			text.text = "You choose to pick up the Flashlight, wise choice! " +
 						"You hear soft footsteps down the hall. You check your mirror to see no one is around the corner. " +
 						"However, it is too dark to see pass 20 ft. You are confident you can grab another item. \n\n" +
 						"Press 1 to grab the Lighter, Press 3 to grab the Screwdriver, " +
@@ -1296,12 +1382,12 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.selection_3_item_4_2_3;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_2; 
+			myState = States.punch_or_run_item_4_2; 
 		}
 		}
 		
 		void state_selection_2_item_4_3 () {
-			text.text = "You choose to pick up the Screwdriver, you prefer to end it quick! " +
+			text.text = "You choose to pick up the Screwdriver, you prefer to end a fight quick, alright Batfleck! " +
 						"You hear soft footsteps down the hall. You check your mirror to see no one is around the corner. " +
 						"However, it is too dark to see pass 20 ft. You are confident you can grab another item. \n\n" +
 						"Press 1 to grab the Lighter, Press 2 to grab the Flashlight, " +
@@ -1311,319 +1397,295 @@ public class TextController : MonoBehaviour {
 		} else if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.selection_3_item_4_3_2;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_3; 
+			myState = States.shank_punch_or_run_item_4_3; 
 		}
 		}
 		
 		void state_selection_3_item_1_2_3 () {
 			text.text = "You choose to pick up the Screwdriver, better to have it and not need it. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 4 to grab the Brass knuckles, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_2_3; 
+			myState = States.shank_or_run_item_1_2_3; 
 		}
 		}
 		
 		void state_selection_3_item_1_2_4 () {
 			text.text = "You choose to pick up the Brass knuckles, better to have it and not need it. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 3 to grab the Screwdriver, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_2_4; 
+			myState = States.punch_or_run_item_1_2_4; 
 		}
 		}
 		
 		void state_selection_3_item_1_3_2 () {
-			text.text = "You choose to pick up the Flashlight, you prefer a tactical style! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Flashlight, you prefer a tactical style, someone played Modern Warfare! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 4 to grab the Brass knuckles, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_3_2; 
+			myState = States.shank_or_run_item_1_3_2; 
 		}
 		}
 		
 		void state_selection_3_item_1_3_4 () {
-			text.text = "You choose to pick up the Brass knuckles, you like to take care of things up close and personal! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Brass knuckles, you like to take care of things up close and personal, I'm down! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 2 to grab the Flashlight, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_3_4; 
+			myState = States.shank_punch_or_run_item_1_3_4; 
 		}
 		}
 		
 		void state_selection_3_item_1_4_2 () {
 			text.text = "You choose to pick up the Flashlight, easier to grip one hand and swing with the other. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 3 to grab the Screwdriver, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_4_2; 
+			myState = States.punch_or_run_item_1_4_2; 
 		}
 		}
 		
 		void state_selection_3_item_1_4_3 () {
-			text.text = "You choose to pick up the Screwdriver, maybe to quickly end a fight? " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Screwdriver, you prefer to up close and personal, I'm down with that! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 2 to grab the Flashlight, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_1_4_3; 
+			myState = States.shank_punch_or_run_item_1_4_3; 
 		}
 		}
 		
 		void state_selection_3_item_2_1_3 () {
 			text.text = "You choose to pick up the Screwdriver, better to have it and not need it. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 4 to grab the Brass knuckles, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_1_3; 
+			myState = States.shank_or_run_item_2_1_3; 
 		}
 		}
 		
 		void state_selection_3_item_2_1_4 () {
 			text.text = "You choose to pick up the Brass knuckles, better to have it and not need it. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 3 to grab the Screwdriver, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_1_4; 
+			myState = States.punch_or_run_item_2_1_4; 
 		}
 		}
 		
 		void state_selection_3_item_2_3_1 () {
 			text.text = "You choose to pick up the Lighter, without having a joint? " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 4 to grab the Brass knuckles, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_3_1; 
+			myState = States.shank_or_run_item_2_3_1; 
 		}
 		}
 		
 		void state_selection_3_item_2_3_4 () {
-			text.text = "You choose to pick up the Brass knuckles, better to have it and not need it. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Brass knuckles, you prefer up close and personal, I'm down with that! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 1 to grab the Lighter, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_3_4; 
+			myState = States.shank_punch_or_run_item_2_3_4; 
 		}
 		}
 		
 		void state_selection_3_item_2_4_1 () {
-			text.text = "You choose to pick up the Lighter, without having a joint? " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Lighter, without a joint? " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 3 to grab the Screwdriver, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_4_1; 
+			myState = States.punch_or_run_item_2_4_1; 
 		}
 		}
 		
 		void state_selection_3_item_2_4_3 () {
-			text.text = "You choose to pick up the Screwdriver, don't want to get your fist dirty. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Screwdriver, you prefer to end a fight quick, alright Batfleck! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 1 to grab the Lighter, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_2_4_3; 
+			myState = States.shank_punch_or_run_item_2_4_3; 
 		}
 		}
 		
 		void state_selection_3_item_3_1_2 () {
-			text.text = "You choose to pick up the Flashlight! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Flashlight, wise choice! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 4 to grab the Brass knuckles, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_1_2; 
+			myState = States.shank_or_run_item_3_1_2; 
 		}
 		}
 		
 		void state_selection_3_item_3_1_4 () {
 			text.text = "You choose to pick up the Brass knuckles, they won't see you coming. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 2 to grab the Flashlight, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_1_4; 
+			myState = States.shank_punch_or_run_item_3_1_4; 
 		}
 		}
 		
 		void state_selection_3_item_3_2_1 () {
-			text.text = "You choose to pick up the Lighter! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Lighter, without a joint? " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 4 to grab the Brass knuckles, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_2_1; 
+			myState = States.shank_or_run_item_3_2_1; 
 		}
 		}
 		
 		void state_selection_3_item_3_2_4 () {
 			text.text = "You choose to pick up the Brass knuckles, you don't mind getting your hands dirty. " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 1 to grab the Lighter, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_2_4; 
+			myState = States.shank_punch_or_run_item_3_2_4; 
 		}
 		}
 		
 		void state_selection_3_item_3_4_1 () {
-			text.text = "You choose to pick up the Lighter! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Lighter, without a joint? " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 2 to grab the Flashlight, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_4_1; 
+			myState = States.shank_punch_or_run_item_3_4_1; 
 		}
 		}
 		
 		void state_selection_3_item_3_4_2 () {
-			text.text = "You choose to pick up the Flashlight! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Flashlight, wise choice! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 1 to grab the Lighter, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_3_4_2; 
+			myState = States.shank_punch_or_run_item_3_4_2; 
 		}
 		}
 		
 		void state_selection_3_item_4_1_2 () {
-			text.text = "You choose to pick up the Flashlight! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Flashlight, wise choice! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 3 to grab the Screwdriver, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_1_2; 
+			myState = States.punch_or_run_item_4_1_2; 
 		}
 		}
 		
 		void state_selection_3_item_4_1_3 () {
-			text.text = "You choose to pick up the Screwdriver! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Screwdriver, you prefer to end a fight quick, alright Batfleck! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 2 to grab the Flashlight, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_1_3; 
+			myState = States.shank_punch_or_run_item_4_1_3; 
 		}
 		}
 		
 		void state_selection_3_item_4_2_1 () {
-			text.text = "You choose to pick up the Lighter! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Lighter, without a joint? " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 3 to grab the Screwdriver, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_2_1; 
+			myState = States.punch_or_run_item_4_2_1; 
 		}
 		}
 		
 		void state_selection_3_item_4_2_3 () {
-			text.text = "You choose to pick up the Screwdriver! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Screwdriver, you prefer to end a fight quick, alright Batfleck! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 1 to grab the Lighter, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_2_3; 
+			myState = States.shank_punch_or_run_item_4_2_3; 
 		}
 		}
 		
 		void state_selection_3_item_4_3_1 () {
-			text.text = "You choose to pick up the Lighter! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Lighter, without a joint? " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 2 to grab the Flashlight, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_3_1; 
+			myState = States.shank_punch_or_run_item_4_3_1; 
 		}
 		}
 		
 		void state_selection_3_item_4_3_2 () {
-			text.text = "You choose to pick up the Flashlight! " +
-						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. " +
-						"You are not sure if you can grab another item and escape. \n\n" +
+			text.text = "You choose to pick up the Flashlight, wise choice! " +
+						"You hear footsteps growing louder down the hall. Your adrenaline starts pumping. \n\n" +
 						"Press 1 to grab the Lighter, " +
 						"or Press R to return to the corridor!";
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
 			myState = States.game_over_0;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
-			myState = States.corridor_2_item_4_3_2; 
+			myState = States.shank_punch_or_run_item_4_3_2; 
 		}
 		}
 		
@@ -1631,6 +1693,486 @@ public class TextController : MonoBehaviour {
 			text.text = "You decided to pick up the last item in the storage but the guards rush in around the corner. " +
 						"You are detained and sent back to your cell. " +
 						"You lost your chance to escape the Booty Warrior. \n\n" +
+						"GAME OVER! Press P to play again!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.cell;
+		} 
+		}
+		
+		void state_shank_or_run_item_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3; 
+		}
+		}
+		
+		void state_punch_or_run_item_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4; 
+		}
+		}
+		
+		void state_shank_or_run_item_1_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_3; 
+		}
+		}
+		
+		void state_shank_or_run_item_2_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_3; 
+		}
+		}
+		
+		void state_shank_or_run_item_3_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1; 
+		}
+		}
+		
+		void state_shank_or_run_item_3_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_2; 
+		}
+		}
+		
+		void state_shank_or_run_item_1_2_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_2_3; 
+		}
+		}
+		
+		void state_shank_or_run_item_1_3_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_3_2; 
+		}
+		}
+		
+		void state_shank_or_run_item_2_1_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_1_3; 
+		}
+		}
+		
+		void state_shank_or_run_item_2_3_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_3_1; 
+		}
+		}
+		
+		void state_shank_or_run_item_3_1_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_2; 
+		}
+		}
+		
+		void state_shank_or_run_item_3_2_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_2_1; 
+		}
+		}
+		
+		void state_punch_or_run_item_1_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_4; 
+		}
+		}
+		
+		void state_punch_or_run_item_2_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_4; 
+		}
+		}
+		
+		void state_punch_or_run_item_4_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_1; 
+		}
+		}
+		
+		void state_punch_or_run_item_4_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_2; 
+		}
+		}
+		
+		void state_punch_or_run_item_1_2_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_2_4; 
+		}
+		}
+		
+		void state_punch_or_run_item_1_4_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_4_2; 
+		}
+		}
+		
+		void state_punch_or_run_item_2_1_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_1_4; 
+		}
+		}
+		
+		void state_punch_or_run_item_2_4_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_4_1; 
+		}
+		}
+		
+		void state_punch_or_run_item_4_1_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_1_2; 
+		}
+		}
+		
+		void state_punch_or_run_item_4_2_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4;
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_2_1; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_3_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_4; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_4_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_3; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_1_3_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_3_4; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_1_4_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_1_4_3; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_2_3_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_3_4; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_2_4_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_2_4_3; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_3_1_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_1_4; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_3_2_4 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_2_4; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_3_4_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_4_1; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_3_4_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_3_4_2; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_4_1_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_1_3; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_4_2_3 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_2_3; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_4_3_1 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_3_1; 
+		}
+		}
+		
+		void state_shank_punch_or_run_item_4_3_2 () {
+			text.text = "You begin to make your way back to the corridor. You sneak pass a few of guards on the way. " +
+						"You see one of the guards stand away from the crowd. \n\n" +
+						"Press S to shank the guard, Press P to punch the guard, " +
+						"or Press R to return to the corridor!";
+		if (Input.GetKeyDown(KeyCode.S)) {
+			myState = States.game_over_3;
+		} else if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.game_over_4; 
+		} else if (Input.GetKeyDown(KeyCode.R)) {
+			myState = States.corridor_2_item_4_3_2; 
+		}
+		}
+		
+		void state_game_over_3 () {
+			text.text = "You lunge to a prison guard from behind. You successfully stab the guard from their back, however, " +
+						"it was not a lethal stab. The guard gives a loud scream and the other guards rush in to fill you " +
+						"with lead. Nice going Solid Snake, hope the Booty Warrior isn't a necrophiliac. \n\n" +
+						"GAME OVER! Press P to play again!";
+		if (Input.GetKeyDown(KeyCode.P)) {
+			myState = States.cell;
+		} 
+		}
+		
+		void state_game_over_4 () {
+			text.text = "You throw a right hook at the lonely prison guard, however, in this minimum security facility the guards " +
+						"receive basic combat training. And it was at that moment you knew, you fucked up! The guard counters " +
+						"your hook with a single leg takedown. You are then sent back to your cell. You missed your chance to escape the Booty Warrior! \n\n" +
 						"GAME OVER! Press P to play again!";
 		if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.cell;
@@ -1658,7 +2200,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_corridor_2_item_3 () {
-			text.text = "You managed to escape the guards who were creeping around the halls. " +
+			text.text = "You played it cool and escape the guards who were creeping around the halls. " +
 						"It's too dangerous to go back. What are you going to do with a screwdriver and no light? " +
 						"Oh well, you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
@@ -1689,8 +2231,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_1_3 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You could have shanked a guard but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Coward... " +
+						"Now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_1_3; 
@@ -1719,8 +2261,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_2_3 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. You surpassed my expectations. " +
+						"Now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2_3; 
@@ -1740,7 +2282,7 @@ public class TextController : MonoBehaviour {
 		void state_corridor_2_item_3_1 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
 						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"So Bob the Buider, what are you planning to do with just a Screwdriver and Lighter? \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_1; 
@@ -1749,8 +2291,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_3_2 () {
 			text.text = "You managed to escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. You surpassed my expectations. " +
+						"Now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_2; 
@@ -1758,9 +2300,9 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_corridor_2_item_3_4 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_4; 
@@ -1788,9 +2330,9 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_corridor_2_item_4_3 () {
-			text.text = "You managed to escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+			text.text = "You managed to narrowly escape the guards who were around the corner. " +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4_3; 
@@ -1829,8 +2371,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_1_3_4 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_1_3_4; 
@@ -1849,8 +2391,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_1_4_3 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_1_4_3; 
@@ -1859,8 +2401,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_2_1_3 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. You surpassed my expectations. " +
+						"Now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2_1_3; 
@@ -1879,8 +2421,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_2_3_1 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. You surpassed my expectations. " +
+						"Now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2_3_1; 
@@ -1889,8 +2431,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_2_3_4 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2_3_4; 
@@ -1909,8 +2451,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_2_4_3 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_2_4_3; 
@@ -1919,8 +2461,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_3_1_2 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. You surpassed my expectations. " +
+						"Now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_1_2; 
@@ -1929,8 +2471,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_3_1_4 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_1_4; 
@@ -1939,8 +2481,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_3_2_1 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. You surpassed my expectations. " +
+						"Now you have to move forward before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_2_1; 
@@ -1949,8 +2491,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_3_2_4 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_2_4; 
@@ -1959,8 +2501,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_3_4_1 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_4_1; 
@@ -1969,8 +2511,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_3_4_2 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_3_4_2; 
@@ -1989,8 +2531,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_4_1_3 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4_1_3; 
@@ -2009,8 +2551,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_4_2_3 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4_2_3; 
@@ -2019,8 +2561,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_4_3_1 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4_3_1; 
@@ -2029,8 +2571,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_corridor_2_item_4_3_2 () {
 			text.text = "You managed to narrowly escape the guards who were around the corner. " +
-						"You could have shanked a guard, but you played it safe. " +
-						"Great job, now you have to move forward before the guards come back. \n\n" +
+						"You could have shanked a guard, but you played it safe. Why the hell did you grab the weapons then you dipshit? " +
+						"Whatever, you have to move forward now before the guards come back. \n\n" +
 						"Press D to go to the Stairs!";
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stairs_2_item_4_3_2; 
@@ -2060,7 +2602,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a sharp Screwdriver at your disposal. " +
-						"You feel confident to continue down the stairs. \n\n" +
+						"You feel confident to continue down the stairs. Oh so now you want to use it! \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.stairs_3_item_3; 
@@ -2070,7 +2612,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a shiny pair of Brass knuckles at your disposal. " +
-						"You feel confident to continue down the stairs. \n\n" +
+						"You feel confident to continue down the stairs. Oh so now you want to use them! \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.stairs_3_item_4; 
@@ -2164,7 +2706,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_3_4 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a sharp Screwdriver and shiny Brass knuckles at your disposal. " +
-						"You feel confident to continue down the stairs. \n\n" +
+						"You feel confident to continue down the stairs. Oh so now you want to use them! \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.stairs_3_item_3_4; 
@@ -2194,7 +2736,7 @@ public class TextController : MonoBehaviour {
 		void state_stairs_2_item_4_3 () {
 			text.text = "You approached the stairs overwhelming with darkness. " +
 						"You have a sharp Screwdriver and shiny Brass knuckles at your disposal. " +
-						"You feel confident to continue down the stairs. \n\n" +
+						"You feel confident to continue down the stairs. Oh so now you want to use them! \n\n" +
 						"Press S to continue down the Stairs!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
 			myState = States.stairs_3_item_4_3; 
@@ -2466,7 +3008,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter ignite, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2506,7 +3048,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_2a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2526,7 +3068,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_3 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2536,7 +3078,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_4 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2546,7 +3088,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_2_1a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2586,7 +3128,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_3_1 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2616,7 +3158,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_4_1 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2646,7 +3188,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_2_3a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2666,7 +3208,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_2_4a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2686,7 +3228,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_3_2a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2706,7 +3248,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_3_4 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2716,7 +3258,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_4_2a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2736,7 +3278,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_1_4_3 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2746,7 +3288,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_2_1_3a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2766,7 +3308,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_2_1_4a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2786,7 +3328,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_2_3_1a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2816,7 +3358,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_2_4_1a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2846,7 +3388,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_3_1_2a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2866,7 +3408,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_3_1_4 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2876,7 +3418,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_3_2_1a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2906,7 +3448,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_3_4_1 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2926,7 +3468,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_4_1_2a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2946,7 +3488,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_4_1_3 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -2956,7 +3498,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_4_2_1a () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";;
@@ -2986,7 +3528,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_stairs_3_item_4_3_1 () {
-			text.text = "The sparks from the Lighter ignite a small flame. " +
+			text.text = "The sparks from the Lighter, you kindle the flame! " +
 						"You feel the heat radiate on your fingetips. " +
 						"You are able to see a small radius of leading downstairs. \n\n" +
 						"Press S to continue down the Stairs!";
@@ -3006,7 +3548,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3016,7 +3558,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3026,7 +3568,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3036,7 +3578,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3046,7 +3588,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3056,7 +3598,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3066,7 +3608,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3076,7 +3618,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3086,7 +3628,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3096,7 +3638,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3106,7 +3648,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3116,7 +3658,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3126,7 +3668,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3136,7 +3678,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3146,7 +3688,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3156,7 +3698,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3166,7 +3708,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_2_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3176,7 +3718,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_2_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3186,7 +3728,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_3_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3196,7 +3738,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_3_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3206,7 +3748,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_4_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3216,7 +3758,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_1_4_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3226,7 +3768,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_1_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3236,7 +3778,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_1_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3246,7 +3788,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_3_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3256,7 +3798,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_3_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3266,7 +3808,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_4_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3276,7 +3818,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_2_4_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3286,7 +3828,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_1_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3296,7 +3838,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_1_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3306,7 +3848,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_2_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3316,7 +3858,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_2_4 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3326,7 +3868,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_4_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3336,7 +3878,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_3_4_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3346,7 +3888,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_1_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3356,7 +3898,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_1_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3366,7 +3908,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_2_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3376,7 +3918,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_2_3 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3386,7 +3928,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_3_1 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -3396,7 +3938,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_barracks_0_item_4_3_2 () {
-			text.text = "You reached the final step of the stairs and find yourself in the barracks. " +
+			text.text = "You reached the final step of the stairs and find yourself in the barracks, which conveniently has no guards! " +
 						"At your right you found a closet that stores the uniforms of the prison guards. " +
 						"You don't have much time to waste so you rush to the closet door. \n\n" +
 						"Press C to observe the closet!";
@@ -4550,9 +5092,9 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_use_item_4 () {
-			text.text = "You traded your golden Brass knuckles with the custodian. " +
-						"You maintain eye contact with the custodian to chack that they will not use them against you. " +
-						"The custodian is thankful for the golden Brass knuckles and gives you the keys. \n\n" +
+			text.text = "You traded your golden Brass knuckles with the custodian. You maintain eye contact with the custodian. " +
+						"The custodian is thanful for the Brass Knuckles and gives you the keys.  " +
+						"I thought he was going to make you suck his dick, but this is good too. \n\n" +
 						"Press K to grab the Keys!";
 		 if (Input.GetKeyDown(KeyCode.K)) {
 			myState = States.keys_0; 
@@ -4580,7 +5122,7 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_keys_0 () {
-			text.text = "You are reliefed that you did not have to draw blood to get the keys. " +
+			text.text = "You didn't have to draw blood to get the keys, way to go boy scout! " +
 						"You quickly return to the closet found in the barracks before the prison guards arrive. \n\n" +
 						"Press I to inspect the lock!";
 		 if (Input.GetKeyDown(KeyCode.I)) {
@@ -4590,8 +5132,8 @@ public class TextController : MonoBehaviour {
 		
 		void state_keys_1 () {
 			text.text = "You grab the keys over the custodian's body. " +
-						"You see them face flat with a small pool of blood pouring down their nose. " +
-						"You do not give a second thought and return to the closet found in the barracks. \n\n" +
+						"You see him face flat with a small pool of blood pouring down his nose. " +
+						"You do not give a second thought and return to the closet found in the barracks. Savage, I love it! \n\n" +
 						"Press I to inspect the lock!";
 		 if (Input.GetKeyDown(KeyCode.I)) {
 			myState = States.lock_5; 
@@ -4599,8 +5141,8 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_lock_5 () {
-			text.text = "You shuffle throught the keys to find a perfect match. " +
-						"Eventually you find the right match and unlock the door. \n\n" +
+			text.text = "You shuffle through the keys to find a perfect match. " +
+						"In your first try you find the right match, you're a champ, and unlock the door. \n\n" +
 						"Press O to open the Closet!";
 		 if (Input.GetKeyDown(KeyCode.O)) {
 			myState = States.closet_1; 
@@ -4608,18 +5150,18 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_closet_1 () {
-			text.text = "You tap on the center of the Flashlight, illuminating a bright white ray. " +
-						"You are concerned the brightness of the Flashlight will give away your position so you move quick. \n\n" +
-						"Press S to continue down the Stairs!";
-		 if (Input.GetKeyDown(KeyCode.S)) {
+			text.text = "You bust open the closet and found a photo of Tom Cruise and a set of uniforms. " +
+						"You manage to find a uniform that is your size. \n\n" +
+						"Press U to grab the Uniform!";
+		 if (Input.GetKeyDown(KeyCode.U)) {
 			myState = States.uniform_0; 
 		}
 		}
 		
 		void state_uniform_0 () {
 			text.text = "You put on the uniform over your prison outfit. " +
-						"It feels cozy, this is what your tax dollars pays. " +
-						"You move forward near the prison's entrance. \n\n" +
+						"It feels cozy, this is what your tax dollars are going too. Oh right, you don't pay taxes. " +
+						"You grab the photo of Tom Cruise and move towards the prison's entrance. \n\n" +
 						"Press M to move near the entrance!";
 		 if (Input.GetKeyDown(KeyCode.M)) {
 			myState = States.court_0; 
@@ -4628,7 +5170,7 @@ public class TextController : MonoBehaviour {
 		
 		void state_court_0 () {
 			text.text = "You arrive at the courtyard near the entrance. " +
-						"You blend in with the other prison guards. Do not blow your cover! " +
+						"You blend in with the other prison guards. Do not blow your cover (I cannot stress this enough)! " +
 						"You can taste freedom on your fingertips. \n\n" +
 						"Press R to run to the gate or Press S to slowly make your way to the gate!";
 		 if (Input.GetKeyDown(KeyCode.S)) {
@@ -4649,9 +5191,9 @@ public class TextController : MonoBehaviour {
 		}
 		
 		void state_game_over_2 () {
-			text.text = "You lost your cool and decide to make a break for the front gate. " +
+			text.text = "You lost your cool and decide to make a break for the front gate. Idiot! " +
 						"The prison guards become suspicious and tackle you to stop you on your tracks. " + 
-						"They return you to your cell. You missed your chance to escape the Booty Warrior! \n\n" +
+						"They return you to your cell. You missed your chance to escape the Booty Warrior! (cue 'In the End' by Linkin Park). \n\n" +
 						"GAME OVER! Press P to play again!";
 		 if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.cell; 
@@ -4660,9 +5202,10 @@ public class TextController : MonoBehaviour {
 		
 		void state_freedom () {
 			text.text = "You check your surroundings to see other prison guards in the nightwatch. " +
-						"You prison guards seem to mind their own business, so you continue to walk forward with your hands on " +
-						"your hips to look assertive. You managed to get far enough for the guards not to notice. \n\n" +
-						"Congratulations you managed to escape the Booty Warrior! Press P to play again! ";
+						"The prison guards seem to mind their own business, again tax dollars! You slowly walk forward with your hands " +
+						"your hips, and your head held high, this would make RuPaul proud! You become the Boss you are and walk out that " +
+						"ghetto ass prison with your cheeks intact. \n\n" +
+						"Congratulations you managed to escape the Booty Warrior! Press P to play again!";
 		 if (Input.GetKeyDown(KeyCode.P)) {
 			myState = States.cell; 
 		} 
